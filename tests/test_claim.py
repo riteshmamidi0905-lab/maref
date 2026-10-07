@@ -53,3 +53,17 @@ def test_the_primary_label_is_the_headline_and_secondary_labels_are_labelled_as_
     assert "sensitivity" in CLAIM.lower() and "sensitivity analyses (not the headline" in EVAL.lower()
     for item in ("known before MAREF-Bench", "tuned on the dev split", "test-split answers had been read", "v1.1", "run once and is now spent", "lexicon blind spots", "no independent human"):
         assert item.lower() in CLAIM.lower(), item
+
+
+CARD = ("**MAREF · Research prototype · MIXED**\n> `33/33` labelled failures detected · `36/154` clean runs flagged · `151/187` overall agreement\n"
+        "> Pre-registered advantage vs shipped llmeval gates; no demonstrated advantage over stronger baselines or for trajectory-specific failures.")
+
+
+def test_the_approved_card_is_in_the_canonical_wording_and_33_of_33_never_travels_alone():
+    assert CARD in CLAIM
+    assert "falsely flagged" not in CLAIM.split("## 1. Against llmeval")[0], "the approved card says 'clean runs flagged'"
+    for name, text in (("CLAIM", CLAIM), ("EVALUATION", EVAL), ("README", README)):
+        for n, line in enumerate(text.splitlines()):
+            if "33/33" in line:
+                window = " ".join(text.splitlines()[max(0, n - 1): n + 2])
+                assert "36/154" in window and "151/187" in window, f"{name}.md line {n + 1}: 33/33 appears without the false-alarm and agreement figures beside it"

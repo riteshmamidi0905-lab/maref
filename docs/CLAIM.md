@@ -5,13 +5,13 @@ This file is the canonical wording for any public statement about MAREF's measur
 
 All numbers: the held-out **test split** of MAREF-Bench v1, evaluated **once** by the frozen MAREF v0.1.0 (`experiments/MAREF-FREEZE.json`, root `d5f1d12c…a817`), **reference-aware** mode, **frozen primary labels** (`FM_ANY`), 187 runs (120 real runs of one small model, 67 controlled synthetic runs), 24 task clusters. Source: `results/test/results.json`, rendered in `docs/EVALUATION.md`.
 
-## Compact presentation (proposed homepage card; the portfolio has not been changed)
+## Compact presentation (approved wording for the eventual portfolio card; the portfolio has not been changed)
 > **MAREF · Research prototype · MIXED**
-> `33/33` labelled failures detected
-> `36/154` clean runs falsely flagged
-> `151/187` overall agreement
-> Beat shipped llmeval gates on the pre-registered agreement comparison, but did not beat stronger baselines or establish trajectory-specific advantage.
+> `33/33` labelled failures detected · `36/154` clean runs flagged · `151/187` overall agreement
+> Pre-registered advantage vs shipped llmeval gates; no demonstrated advantage over stronger baselines or for trajectory-specific failures.
 > [Full evaluation →]
+
+The card links to the complete evaluation (`docs/EVALUATION.md`). **`33/33` must never be shown without the false-alarm (`36/154`) and agreement (`151/187`) figures beside it.** Each figure is the MAREF reference-aware, frozen-primary-label, pooled test-split number (187 runs).
 
 ## 1. Against llmeval as shipped: the pre-registered comparison was passed
 MAREF reference-aware had **significantly higher run-level agreement** with the frozen labels than **llmeval hard gates**, under the pre-registered paired **cluster** bootstrap (all runs of a task resampled together):
@@ -32,7 +32,7 @@ For completeness, llmeval's other shipped aggregation (simple average, B1) is al
 | llmeval with thresholds fitted on dev | 158/187 | −0.037 | [−0.181, 0.104] |
 | local 4B judge (frozen prompt) | 166/187 | −0.080 | [−0.206, 0.053] |
 
-Every interval includes zero, so MAREF is **not shown to be better** than any of them on overall agreement; the point estimates are slightly negative (on the 120 real runs alone −0.15 to −0.18, again with intervals including zero). MAREF's recall was the highest of all detectors (33/33 failing runs, 8/8 real) and its false-alarm rate (36/154 pooled, 23%) was higher than that of the always-pass (0%), dev-fitted llmeval (4%) and judge (8%) baselines, which is why its agreement did not improve on theirs.
+Every interval includes zero, so MAREF is **not shown to be better** than any of them on overall agreement; the point estimates are slightly negative (on the 120 real runs alone −0.15 to −0.18, again with intervals including zero). MAREF's recall was the highest of all detectors (33/33 failing runs, 8/8 real), but with 36/154 clean runs flagged (23%) its overall agreement was 151/187, and its false-alarm rate was higher than that of the always-pass (0%), dev-fitted llmeval (4%) and judge (8%) baselines, which is why its agreement did not improve on theirs.
 
 ## 3. Trajectory-specific distinctness: the third pre-registered criterion failed
 Criterion 3 required a trajectory-only failure mode (`FM_INDUCED`, `FM_ACTION_CLAIM`, `FM_TOOL`, `FM_STATUS`) with **all** of: at least 5 positives in the test split; MAREF recall ≥ 80%; llmeval-gates recall ≤ 50%. **None qualified:**
@@ -75,4 +75,4 @@ Full account: `docs/INDEPENDENCE.md`.
 ## 7. Wording rules
 * Say: "research prototype", "MIXED", "pre-registered", "frozen primary labels", "same-author benchmark", "one small model".
 * Do **not** say: "validated", "independently validated", "outperforms llmeval" (unqualified), "does not beat llmeval", "better than baselines", "production-ready", or quote a secondary or adjudicated number as the headline.
-* Always give the denominators and link the full evaluation.
+* Always give the denominators and link the full evaluation. Never quote `33/33` (or "perfect recall") without the `36/154` clean-run false alarms and the `151/187` agreement beside it.
