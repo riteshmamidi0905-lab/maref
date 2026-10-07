@@ -1,11 +1,11 @@
-# MAREF: the claim, stated precisely (M9 amendment)
+# MAREF: the claim, stated precisely
 
 **Research prototype · pre-registered distinctness verdict: MIXED.**
 This file is the canonical wording for any public statement about MAREF's measured result. It exists because "MAREF did not beat llmeval" is **wrong** and "MAREF beat llmeval" is **incomplete**: the pre-registered comparison against llmeval as shipped was passed, the comparison against stronger baselines was not, and the trajectory-specific criterion failed. All three are results; none may be dropped.
 
 All numbers: the held-out **test split** of MAREF-Bench v1, evaluated **once** by the frozen MAREF v0.1.0 (`experiments/MAREF-FREEZE.json`, root `d5f1d12c…a817`), **reference-aware** mode, **frozen primary labels** (`FM_ANY`), 187 runs (120 real runs of one small model, 67 controlled synthetic runs), 24 task clusters. Source: `results/test/results.json`, rendered in `docs/EVALUATION.md`.
 
-## Compact presentation (approved wording for the eventual portfolio card; the portfolio has not been changed)
+## Compact presentation (the card as shown on the portfolio)
 > **MAREF · Research prototype · MIXED**
 > `33/33` labelled failures detected · `36/154` clean runs flagged · `151/187` overall agreement
 > Pre-registered advantage vs shipped llmeval gates; no demonstrated advantage over stronger baselines or for trajectory-specific failures.

@@ -67,3 +67,17 @@ def test_the_approved_card_is_in_the_canonical_wording_and_33_of_33_never_travel
             if "33/33" in line:
                 window = " ".join(text.splitlines()[max(0, n - 1): n + 2])
                 assert "36/154" in window and "151/187" in window, f"{name}.md line {n + 1}: 33/33 appears without the false-alarm and agreement figures beside it"
+
+
+def test_public_readme_carries_every_required_caveat_above_the_fold():
+    head = README.split("## Where it sits")[0]
+    for needle in ("Research prototype", "MIXED", "frozen primary labels", "33/33", "36/154", "151/187", "154/187", "158/187", "166/187", "30/112", "65/112", "+0.257", "+0.292", "stronger baselines",
+                   "third pre-registered criterion failed", "spent", "not independent validation", "no human labelled", "tuned on the dev split", "some test answers had been read", "v1.1", "lexicon blind spots", "not an agent"):
+        assert needle.lower() in head.lower(), needle
+    fz = json.loads((ROOT / "experiments" / "MAREF-FREEZE.json").read_text())
+    bench = json.loads((ROOT / "benchmark" / "FREEZE.json").read_text())
+    for h in (fz["root_sha256"], bench["root_sha256"], fz["files"]["docs/SPEC.md"], json.loads((ROOT / "experiments" / "JUDGE-FREEZE.json").read_text())["prompt_sha256"]):
+        assert h in README, h
+    for banned in ("outperforms llmeval", "independently validated", "production-ready", "better than baselines", "does not beat llmeval"):
+        assert banned not in README.lower() and banned not in CLAIM.lower().replace("do **not** say", "").split("## 7. wording rules")[0], banned
+    assert "## Reproduce" in README and "Frozen artefacts" in README
