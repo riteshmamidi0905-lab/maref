@@ -1,0 +1,6 @@
+{
+ "maref_root_sha256": "d5f1d12cd0020ca4619e616d27e0eb55837d04fb97c030791cab840e5639a817",
+ "benchmark_root_sha256": "effb7f4c971c23f1afd58ba67eb1b784f47a75d7ef84ed3b0a4dcc4730ac5843",
+ "out": "results/test",
+ "judge": "results/judge/judge_verdicts.json"
+}

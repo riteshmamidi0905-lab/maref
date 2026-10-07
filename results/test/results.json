@@ -1,0 +1,1995 @@
+{
+ "benchmark_root_sha256": "effb7f4c971c23f1afd58ba67eb1b784f47a75d7ef84ed3b0a4dcc4730ac5843",
+ "maref_root_sha256": "d5f1d12cd0020ca4619e616d27e0eb55837d04fb97c030791cab840e5639a817",
+ "maref_frozen": true,
+ "split": "test",
+ "judge_file": "results/judge/judge_verdicts.json",
+ "judge_sha256": "e37f2a957550eb931a1069b22b79d3ca37f28c12e06674cc166d6f736ba5e54e",
+ "labels": "frozen",
+ "n_runs": 187,
+ "detectors": [
+  "B0-always-pass",
+  "B1-llmeval-avg",
+  "B2-llmeval-gates",
+  "B3-judge",
+  "B4-llmeval-tuned",
+  "MAREF-RA",
+  "MAREF-RF"
+ ],
+ "by_source": {
+  "real": {
+   "n": 120,
+   "FM_ANY_positives": 8,
+   "detectors": {
+    "B0-always-pass": {
+     "TP": 0,
+     "FN": 8,
+     "FP": 0,
+     "TN": 112,
+     "recall": "0/8 (0%, 95% CI 0-32%)",
+     "false_alarm": "0/112 (0%, 95% CI 0-3%)",
+     "precision": "n/a (never flagged)",
+     "abstained": "0/120 (0%, 95% CI 0-3%)",
+     "agreement_with_labels": "112/120 (93%, 95% CI 87-97%)"
+    },
+    "B1-llmeval-avg": {
+     "TP": 8,
+     "FN": 0,
+     "FP": 60,
+     "TN": 52,
+     "recall": "8/8 (100%, 95% CI 68-100%)",
+     "false_alarm": "60/112 (54%, 95% CI 44-63%)",
+     "precision": "8/68 (12%, 95% CI 6-22%)",
+     "abstained": "0/120 (0%, 95% CI 0-3%)",
+     "agreement_with_labels": "60/120 (50%, 95% CI 41-59%)"
+    },
+    "B2-llmeval-gates": {
+     "TP": 8,
+     "FN": 0,
+     "FP": 65,
+     "TN": 47,
+     "recall": "8/8 (100%, 95% CI 68-100%)",
+     "false_alarm": "65/112 (58%, 95% CI 49-67%)",
+     "precision": "8/73 (11%, 95% CI 6-20%)",
+     "abstained": "0/120 (0%, 95% CI 0-3%)",
+     "agreement_with_labels": "55/120 (46%, 95% CI 37-55%)"
+    },
+    "B3-judge": {
+     "TP": 5,
+     "FN": 3,
+     "FP": 9,
+     "TN": 103,
+     "recall": "5/8 (62%, 95% CI 31-86%)",
+     "false_alarm": "9/112 (8%, 95% CI 4-15%)",
+     "precision": "5/14 (36%, 95% CI 16-61%)",
+     "abstained": "0/120 (0%, 95% CI 0-3%)",
+     "agreement_with_labels": "108/120 (90%, 95% CI 83-94%)"
+    },
+    "B4-llmeval-tuned": {
+     "TP": 5,
+     "FN": 3,
+     "FP": 5,
+     "TN": 107,
+     "recall": "5/8 (62%, 95% CI 31-86%)",
+     "false_alarm": "5/112 (4%, 95% CI 2-10%)",
+     "precision": "5/10 (50%, 95% CI 24-76%)",
+     "abstained": "0/120 (0%, 95% CI 0-3%)",
+     "agreement_with_labels": "112/120 (93%, 95% CI 87-97%)"
+    },
+    "MAREF-RA": {
+     "TP": 8,
+     "FN": 0,
+     "FP": 30,
+     "TN": 82,
+     "recall": "8/8 (100%, 95% CI 68-100%)",
+     "false_alarm": "30/112 (27%, 95% CI 19-36%)",
+     "precision": "8/38 (21%, 95% CI 11-36%)",
+     "abstained": "0/120 (0%, 95% CI 0-3%)",
+     "agreement_with_labels": "90/120 (75%, 95% CI 67-82%)"
+    },
+    "MAREF-RF": {
+     "TP": 8,
+     "FN": 0,
+     "FP": 30,
+     "TN": 82,
+     "recall": "8/8 (100%, 95% CI 68-100%)",
+     "false_alarm": "30/112 (27%, 95% CI 19-36%)",
+     "precision": "8/38 (21%, 95% CI 11-36%)",
+     "abstained": "0/120 (0%, 95% CI 0-3%)",
+     "agreement_with_labels": "90/120 (75%, 95% CI 67-82%)"
+    }
+   }
+  },
+  "synthetic": {
+   "n": 67,
+   "FM_ANY_positives": 25,
+   "detectors": {
+    "B0-always-pass": {
+     "TP": 0,
+     "FN": 25,
+     "FP": 0,
+     "TN": 42,
+     "recall": "0/25 (0%, 95% CI 0-13%)",
+     "false_alarm": "0/42 (0%, 95% CI 0-8%)",
+     "precision": "n/a (never flagged)",
+     "abstained": "0/67 (0%, 95% CI 0-5%)",
+     "agreement_with_labels": "42/67 (63%, 95% CI 51-73%)"
+    },
+    "B1-llmeval-avg": {
+     "TP": 23,
+     "FN": 2,
+     "FP": 14,
+     "TN": 28,
+     "recall": "23/25 (92%, 95% CI 75-98%)",
+     "false_alarm": "14/42 (33%, 95% CI 21-48%)",
+     "precision": "23/37 (62%, 95% CI 46-76%)",
+     "abstained": "0/67 (0%, 95% CI 0-5%)",
+     "agreement_with_labels": "51/67 (76%, 95% CI 65-85%)"
+    },
+    "B2-llmeval-gates": {
+     "TP": 23,
+     "FN": 2,
+     "FP": 17,
+     "TN": 25,
+     "recall": "23/25 (92%, 95% CI 75-98%)",
+     "false_alarm": "17/42 (40%, 95% CI 27-56%)",
+     "precision": "23/40 (58%, 95% CI 42-71%)",
+     "abstained": "0/67 (0%, 95% CI 0-5%)",
+     "agreement_with_labels": "48/67 (72%, 95% CI 60-81%)"
+    },
+    "B3-judge": {
+     "TP": 19,
+     "FN": 6,
+     "FP": 3,
+     "TN": 39,
+     "recall": "19/25 (76%, 95% CI 57-89%)",
+     "false_alarm": "3/42 (7%, 95% CI 2-19%)",
+     "precision": "19/22 (86%, 95% CI 67-95%)",
+     "abstained": "0/67 (0%, 95% CI 0-5%)",
+     "agreement_with_labels": "58/67 (87%, 95% CI 76-93%)"
+    },
+    "B4-llmeval-tuned": {
+     "TP": 5,
+     "FN": 20,
+     "FP": 1,
+     "TN": 41,
+     "recall": "5/25 (20%, 95% CI 9-39%)",
+     "false_alarm": "1/42 (2%, 95% CI 0-12%)",
+     "precision": "5/6 (83%, 95% CI 44-97%)",
+     "abstained": "0/67 (0%, 95% CI 0-5%)",
+     "agreement_with_labels": "46/67 (69%, 95% CI 57-78%)"
+    },
+    "MAREF-RA": {
+     "TP": 25,
+     "FN": 0,
+     "FP": 6,
+     "TN": 36,
+     "recall": "25/25 (100%, 95% CI 87-100%)",
+     "false_alarm": "6/42 (14%, 95% CI 7-28%)",
+     "precision": "25/31 (81%, 95% CI 64-91%)",
+     "abstained": "0/67 (0%, 95% CI 0-5%)",
+     "agreement_with_labels": "61/67 (91%, 95% CI 82-96%)"
+    },
+    "MAREF-RF": {
+     "TP": 24,
+     "FN": 1,
+     "FP": 6,
+     "TN": 36,
+     "recall": "24/25 (96%, 95% CI 80-99%)",
+     "false_alarm": "6/42 (14%, 95% CI 7-28%)",
+     "precision": "24/30 (80%, 95% CI 63-90%)",
+     "abstained": "0/67 (0%, 95% CI 0-5%)",
+     "agreement_with_labels": "60/67 (90%, 95% CI 80-95%)"
+    }
+   }
+  },
+  "all": {
+   "n": 187,
+   "FM_ANY_positives": 33,
+   "detectors": {
+    "B0-always-pass": {
+     "TP": 0,
+     "FN": 33,
+     "FP": 0,
+     "TN": 154,
+     "recall": "0/33 (0%, 95% CI 0-10%)",
+     "false_alarm": "0/154 (0%, 95% CI 0-2%)",
+     "precision": "n/a (never flagged)",
+     "abstained": "0/187 (0%, 95% CI 0-2%)",
+     "agreement_with_labels": "154/187 (82%, 95% CI 76-87%)"
+    },
+    "B1-llmeval-avg": {
+     "TP": 31,
+     "FN": 2,
+     "FP": 74,
+     "TN": 80,
+     "recall": "31/33 (94%, 95% CI 80-98%)",
+     "false_alarm": "74/154 (48%, 95% CI 40-56%)",
+     "precision": "31/105 (30%, 95% CI 22-39%)",
+     "abstained": "0/187 (0%, 95% CI 0-2%)",
+     "agreement_with_labels": "111/187 (59%, 95% CI 52-66%)"
+    },
+    "B2-llmeval-gates": {
+     "TP": 31,
+     "FN": 2,
+     "FP": 82,
+     "TN": 72,
+     "recall": "31/33 (94%, 95% CI 80-98%)",
+     "false_alarm": "82/154 (53%, 95% CI 45-61%)",
+     "precision": "31/113 (27%, 95% CI 20-36%)",
+     "abstained": "0/187 (0%, 95% CI 0-2%)",
+     "agreement_with_labels": "103/187 (55%, 95% CI 48-62%)"
+    },
+    "B3-judge": {
+     "TP": 24,
+     "FN": 9,
+     "FP": 12,
+     "TN": 142,
+     "recall": "24/33 (73%, 95% CI 56-85%)",
+     "false_alarm": "12/154 (8%, 95% CI 5-13%)",
+     "precision": "24/36 (67%, 95% CI 50-80%)",
+     "abstained": "0/187 (0%, 95% CI 0-2%)",
+     "agreement_with_labels": "166/187 (89%, 95% CI 83-93%)"
+    },
+    "B4-llmeval-tuned": {
+     "TP": 10,
+     "FN": 23,
+     "FP": 6,
+     "TN": 148,
+     "recall": "10/33 (30%, 95% CI 17-47%)",
+     "false_alarm": "6/154 (4%, 95% CI 2-8%)",
+     "precision": "10/16 (62%, 95% CI 39-82%)",
+     "abstained": "0/187 (0%, 95% CI 0-2%)",
+     "agreement_with_labels": "158/187 (84%, 95% CI 79-89%)"
+    },
+    "MAREF-RA": {
+     "TP": 33,
+     "FN": 0,
+     "FP": 36,
+     "TN": 118,
+     "recall": "33/33 (100%, 95% CI 90-100%)",
+     "false_alarm": "36/154 (23%, 95% CI 17-31%)",
+     "precision": "33/69 (48%, 95% CI 36-59%)",
+     "abstained": "0/187 (0%, 95% CI 0-2%)",
+     "agreement_with_labels": "151/187 (81%, 95% CI 75-86%)"
+    },
+    "MAREF-RF": {
+     "TP": 32,
+     "FN": 1,
+     "FP": 36,
+     "TN": 118,
+     "recall": "32/33 (97%, 95% CI 85-99%)",
+     "false_alarm": "36/154 (23%, 95% CI 17-31%)",
+     "precision": "32/68 (47%, 95% CI 36-59%)",
+     "abstained": "0/187 (0%, 95% CI 0-2%)",
+     "agreement_with_labels": "150/187 (80%, 95% CI 74-85%)"
+    }
+   }
+  }
+ },
+ "per_fm": {
+  "FM_ACC": {
+   "real": {
+    "applicable_runs": 65,
+    "positives": 5,
+    "detectors": {
+     "B0-always-pass": {
+      "TP": 0,
+      "FN": 5,
+      "FP": 0,
+      "TN": 60,
+      "recall": "0/5 (0%, 95% CI 0-43%)",
+      "false_alarm": "0/60 (0%, 95% CI 0-6%)",
+      "precision": "n/a (never flagged)"
+     },
+     "B1-llmeval-avg": {
+      "TP": 5,
+      "FN": 0,
+      "FP": 27,
+      "TN": 33,
+      "recall": "5/5 (100%, 95% CI 57-100%)",
+      "false_alarm": "27/60 (45%, 95% CI 33-58%)",
+      "precision": "5/32 (16%, 95% CI 7-32%)"
+     },
+     "B2-llmeval-gates": {
+      "TP": 5,
+      "FN": 0,
+      "FP": 32,
+      "TN": 28,
+      "recall": "5/5 (100%, 95% CI 57-100%)",
+      "false_alarm": "32/60 (53%, 95% CI 41-65%)",
+      "precision": "5/37 (14%, 95% CI 6-28%)"
+     },
+     "B3-judge": {
+      "TP": 5,
+      "FN": 0,
+      "FP": 4,
+      "TN": 56,
+      "recall": "5/5 (100%, 95% CI 57-100%)",
+      "false_alarm": "4/60 (7%, 95% CI 3-16%)",
+      "precision": "5/9 (56%, 95% CI 27-81%)"
+     },
+     "B4-llmeval-tuned": {
+      "TP": 5,
+      "FN": 0,
+      "FP": 5,
+      "TN": 55,
+      "recall": "5/5 (100%, 95% CI 57-100%)",
+      "false_alarm": "5/60 (8%, 95% CI 4-18%)",
+      "precision": "5/10 (50%, 95% CI 24-76%)"
+     },
+     "MAREF-RA": {
+      "TP": 5,
+      "FN": 0,
+      "FP": 0,
+      "TN": 60,
+      "recall": "5/5 (100%, 95% CI 57-100%)",
+      "false_alarm": "0/60 (0%, 95% CI 0-6%)",
+      "precision": "5/5 (100%, 95% CI 57-100%)"
+     },
+     "MAREF-RF": {
+      "TP": 0,
+      "FN": 5,
+      "FP": 0,
+      "TN": 60,
+      "recall": "0/5 (0%, 95% CI 0-43%)",
+      "false_alarm": "0/60 (0%, 95% CI 0-6%)",
+      "precision": "n/a (never flagged)"
+     }
+    }
+   },
+   "synthetic": {
+    "applicable_runs": 28,
+    "positives": 1,
+    "detectors": {
+     "B0-always-pass": {
+      "TP": 0,
+      "FN": 1,
+      "FP": 0,
+      "TN": 27,
+      "recall": "0/1 (0%, 95% CI 0-79%)",
+      "false_alarm": "0/27 (0%, 95% CI 0-12%)",
+      "precision": "n/a (never flagged)"
+     },
+     "B1-llmeval-avg": {
+      "TP": 1,
+      "FN": 0,
+      "FP": 9,
+      "TN": 18,
+      "recall": "1/1 (100%, 95% CI 21-100%)",
+      "false_alarm": "9/27 (33%, 95% CI 19-52%)",
+      "precision": "1/10 (10%, 95% CI 2-40%)"
+     },
+     "B2-llmeval-gates": {
+      "TP": 1,
+      "FN": 0,
+      "FP": 11,
+      "TN": 16,
+      "recall": "1/1 (100%, 95% CI 21-100%)",
+      "false_alarm": "11/27 (41%, 95% CI 25-59%)",
+      "precision": "1/12 (8%, 95% CI 1-35%)"
+     },
+     "B3-judge": {
+      "TP": 1,
+      "FN": 0,
+      "FP": 6,
+      "TN": 21,
+      "recall": "1/1 (100%, 95% CI 21-100%)",
+      "false_alarm": "6/27 (22%, 95% CI 11-41%)",
+      "precision": "1/7 (14%, 95% CI 3-51%)"
+     },
+     "B4-llmeval-tuned": {
+      "TP": 1,
+      "FN": 0,
+      "FP": 4,
+      "TN": 23,
+      "recall": "1/1 (100%, 95% CI 21-100%)",
+      "false_alarm": "4/27 (15%, 95% CI 6-32%)",
+      "precision": "1/5 (20%, 95% CI 4-62%)"
+     },
+     "MAREF-RA": {
+      "TP": 1,
+      "FN": 0,
+      "FP": 2,
+      "TN": 25,
+      "recall": "1/1 (100%, 95% CI 21-100%)",
+      "false_alarm": "2/27 (7%, 95% CI 2-23%)",
+      "precision": "1/3 (33%, 95% CI 6-79%)"
+     },
+     "MAREF-RF": {
+      "TP": 0,
+      "FN": 1,
+      "FP": 0,
+      "TN": 27,
+      "recall": "0/1 (0%, 95% CI 0-79%)",
+      "false_alarm": "0/27 (0%, 95% CI 0-12%)",
+      "precision": "n/a (never flagged)"
+     }
+    }
+   }
+  },
+  "FM_FAB": {
+   "real": {
+    "applicable_runs": 35,
+    "positives": 0,
+    "detectors": {
+     "B0-always-pass": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 0,
+      "TN": 35,
+      "recall": "n/a (no positives)",
+      "false_alarm": "0/35 (0%, 95% CI 0-10%)",
+      "precision": "n/a (never flagged)"
+     },
+     "B1-llmeval-avg": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 26,
+      "TN": 9,
+      "recall": "n/a (no positives)",
+      "false_alarm": "26/35 (74%, 95% CI 58-86%)",
+      "precision": "0/26 (0%, 95% CI 0-13%)"
+     },
+     "B2-llmeval-gates": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 26,
+      "TN": 9,
+      "recall": "n/a (no positives)",
+      "false_alarm": "26/35 (74%, 95% CI 58-86%)",
+      "precision": "0/26 (0%, 95% CI 0-13%)"
+     },
+     "B3-judge": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 5,
+      "TN": 30,
+      "recall": "n/a (no positives)",
+      "false_alarm": "5/35 (14%, 95% CI 6-29%)",
+      "precision": "0/5 (0%, 95% CI 0-43%)"
+     },
+     "B4-llmeval-tuned": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 0,
+      "TN": 35,
+      "recall": "n/a (no positives)",
+      "false_alarm": "0/35 (0%, 95% CI 0-10%)",
+      "precision": "n/a (never flagged)"
+     },
+     "MAREF-RA": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 2,
+      "TN": 33,
+      "recall": "n/a (no positives)",
+      "false_alarm": "2/35 (6%, 95% CI 2-19%)",
+      "precision": "0/2 (0%, 95% CI 0-66%)"
+     },
+     "MAREF-RF": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 0,
+      "TN": 35,
+      "recall": "n/a (no positives)",
+      "false_alarm": "0/35 (0%, 95% CI 0-10%)",
+      "precision": "n/a (never flagged)"
+     }
+    }
+   },
+   "synthetic": {
+    "applicable_runs": 28,
+    "positives": 11,
+    "detectors": {
+     "B0-always-pass": {
+      "TP": 0,
+      "FN": 11,
+      "FP": 0,
+      "TN": 17,
+      "recall": "0/11 (0%, 95% CI 0-26%)",
+      "false_alarm": "0/17 (0%, 95% CI 0-18%)",
+      "precision": "n/a (never flagged)"
+     },
+     "B1-llmeval-avg": {
+      "TP": 10,
+      "FN": 1,
+      "FP": 12,
+      "TN": 5,
+      "recall": "10/11 (91%, 95% CI 62-98%)",
+      "false_alarm": "12/17 (71%, 95% CI 47-87%)",
+      "precision": "10/22 (45%, 95% CI 27-65%)"
+     },
+     "B2-llmeval-gates": {
+      "TP": 10,
+      "FN": 1,
+      "FP": 13,
+      "TN": 4,
+      "recall": "10/11 (91%, 95% CI 62-98%)",
+      "false_alarm": "13/17 (76%, 95% CI 53-90%)",
+      "precision": "10/23 (43%, 95% CI 26-63%)"
+     },
+     "B3-judge": {
+      "TP": 8,
+      "FN": 3,
+      "FP": 1,
+      "TN": 16,
+      "recall": "8/11 (73%, 95% CI 43-90%)",
+      "false_alarm": "1/17 (6%, 95% CI 1-27%)",
+      "precision": "8/9 (89%, 95% CI 57-98%)"
+     },
+     "B4-llmeval-tuned": {
+      "TP": 1,
+      "FN": 10,
+      "FP": 0,
+      "TN": 17,
+      "recall": "1/11 (9%, 95% CI 2-38%)",
+      "false_alarm": "0/17 (0%, 95% CI 0-18%)",
+      "precision": "1/1 (100%, 95% CI 21-100%)"
+     },
+     "MAREF-RA": {
+      "TP": 11,
+      "FN": 0,
+      "FP": 1,
+      "TN": 16,
+      "recall": "11/11 (100%, 95% CI 74-100%)",
+      "false_alarm": "1/17 (6%, 95% CI 1-27%)",
+      "precision": "11/12 (92%, 95% CI 65-99%)"
+     },
+     "MAREF-RF": {
+      "TP": 11,
+      "FN": 0,
+      "FP": 1,
+      "TN": 16,
+      "recall": "11/11 (100%, 95% CI 74-100%)",
+      "false_alarm": "1/17 (6%, 95% CI 1-27%)",
+      "precision": "11/12 (92%, 95% CI 65-99%)"
+     }
+    }
+   }
+  },
+  "FM_ACTION_CLAIM": {
+   "real": {
+    "applicable_runs": 15,
+    "positives": 0,
+    "detectors": {
+     "B0-always-pass": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 0,
+      "TN": 15,
+      "recall": "n/a (no positives)",
+      "false_alarm": "0/15 (0%, 95% CI 0-20%)",
+      "precision": "n/a (never flagged)"
+     },
+     "B1-llmeval-avg": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 5,
+      "TN": 10,
+      "recall": "n/a (no positives)",
+      "false_alarm": "5/15 (33%, 95% CI 15-58%)",
+      "precision": "0/5 (0%, 95% CI 0-43%)"
+     },
+     "B2-llmeval-gates": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 5,
+      "TN": 10,
+      "recall": "n/a (no positives)",
+      "false_alarm": "5/15 (33%, 95% CI 15-58%)",
+      "precision": "0/5 (0%, 95% CI 0-43%)"
+     },
+     "B3-judge": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 0,
+      "TN": 15,
+      "recall": "n/a (no positives)",
+      "false_alarm": "0/15 (0%, 95% CI 0-20%)",
+      "precision": "n/a (never flagged)"
+     },
+     "B4-llmeval-tuned": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 0,
+      "TN": 15,
+      "recall": "n/a (no positives)",
+      "false_alarm": "0/15 (0%, 95% CI 0-20%)",
+      "precision": "n/a (never flagged)"
+     },
+     "MAREF-RA": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 0,
+      "TN": 15,
+      "recall": "n/a (no positives)",
+      "false_alarm": "0/15 (0%, 95% CI 0-20%)",
+      "precision": "n/a (never flagged)"
+     },
+     "MAREF-RF": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 0,
+      "TN": 15,
+      "recall": "n/a (no positives)",
+      "false_alarm": "0/15 (0%, 95% CI 0-20%)",
+      "precision": "n/a (never flagged)"
+     }
+    }
+   },
+   "synthetic": {
+    "applicable_runs": 9,
+    "positives": 5,
+    "detectors": {
+     "B0-always-pass": {
+      "TP": 0,
+      "FN": 5,
+      "FP": 0,
+      "TN": 4,
+      "recall": "0/5 (0%, 95% CI 0-43%)",
+      "false_alarm": "0/4 (0%, 95% CI 0-49%)",
+      "precision": "n/a (never flagged)"
+     },
+     "B1-llmeval-avg": {
+      "TP": 4,
+      "FN": 1,
+      "FP": 0,
+      "TN": 4,
+      "recall": "4/5 (80%, 95% CI 38-96%)",
+      "false_alarm": "0/4 (0%, 95% CI 0-49%)",
+      "precision": "4/4 (100%, 95% CI 51-100%)"
+     },
+     "B2-llmeval-gates": {
+      "TP": 4,
+      "FN": 1,
+      "FP": 0,
+      "TN": 4,
+      "recall": "4/5 (80%, 95% CI 38-96%)",
+      "false_alarm": "0/4 (0%, 95% CI 0-49%)",
+      "precision": "4/4 (100%, 95% CI 51-100%)"
+     },
+     "B3-judge": {
+      "TP": 5,
+      "FN": 0,
+      "FP": 0,
+      "TN": 4,
+      "recall": "5/5 (100%, 95% CI 57-100%)",
+      "false_alarm": "0/4 (0%, 95% CI 0-49%)",
+      "precision": "5/5 (100%, 95% CI 57-100%)"
+     },
+     "B4-llmeval-tuned": {
+      "TP": 0,
+      "FN": 5,
+      "FP": 0,
+      "TN": 4,
+      "recall": "0/5 (0%, 95% CI 0-43%)",
+      "false_alarm": "0/4 (0%, 95% CI 0-49%)",
+      "precision": "n/a (never flagged)"
+     },
+     "MAREF-RA": {
+      "TP": 5,
+      "FN": 0,
+      "FP": 0,
+      "TN": 4,
+      "recall": "5/5 (100%, 95% CI 57-100%)",
+      "false_alarm": "0/4 (0%, 95% CI 0-49%)",
+      "precision": "5/5 (100%, 95% CI 57-100%)"
+     },
+     "MAREF-RF": {
+      "TP": 5,
+      "FN": 0,
+      "FP": 0,
+      "TN": 4,
+      "recall": "5/5 (100%, 95% CI 57-100%)",
+      "false_alarm": "0/4 (0%, 95% CI 0-49%)",
+      "precision": "5/5 (100%, 95% CI 57-100%)"
+     }
+    }
+   }
+  },
+  "FM_INDUCED": {
+   "real": {
+    "applicable_runs": 5,
+    "positives": 0,
+    "detectors": {
+     "B0-always-pass": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 0,
+      "TN": 5,
+      "recall": "n/a (no positives)",
+      "false_alarm": "0/5 (0%, 95% CI 0-43%)",
+      "precision": "n/a (never flagged)"
+     },
+     "B1-llmeval-avg": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 5,
+      "TN": 0,
+      "recall": "n/a (no positives)",
+      "false_alarm": "5/5 (100%, 95% CI 57-100%)",
+      "precision": "0/5 (0%, 95% CI 0-43%)"
+     },
+     "B2-llmeval-gates": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 5,
+      "TN": 0,
+      "recall": "n/a (no positives)",
+      "false_alarm": "5/5 (100%, 95% CI 57-100%)",
+      "precision": "0/5 (0%, 95% CI 0-43%)"
+     },
+     "B3-judge": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 0,
+      "TN": 5,
+      "recall": "n/a (no positives)",
+      "false_alarm": "0/5 (0%, 95% CI 0-43%)",
+      "precision": "n/a (never flagged)"
+     },
+     "B4-llmeval-tuned": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 0,
+      "TN": 5,
+      "recall": "n/a (no positives)",
+      "false_alarm": "0/5 (0%, 95% CI 0-43%)",
+      "precision": "n/a (never flagged)"
+     },
+     "MAREF-RA": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 0,
+      "TN": 5,
+      "recall": "n/a (no positives)",
+      "false_alarm": "0/5 (0%, 95% CI 0-43%)",
+      "precision": "n/a (never flagged)"
+     },
+     "MAREF-RF": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 0,
+      "TN": 5,
+      "recall": "n/a (no positives)",
+      "false_alarm": "0/5 (0%, 95% CI 0-43%)",
+      "precision": "n/a (never flagged)"
+     }
+    }
+   },
+   "synthetic": {
+    "applicable_runs": 2,
+    "positives": 0,
+    "detectors": {
+     "B0-always-pass": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 0,
+      "TN": 2,
+      "recall": "n/a (no positives)",
+      "false_alarm": "0/2 (0%, 95% CI 0-66%)",
+      "precision": "n/a (never flagged)"
+     },
+     "B1-llmeval-avg": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 2,
+      "TN": 0,
+      "recall": "n/a (no positives)",
+      "false_alarm": "2/2 (100%, 95% CI 34-100%)",
+      "precision": "0/2 (0%, 95% CI 0-66%)"
+     },
+     "B2-llmeval-gates": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 2,
+      "TN": 0,
+      "recall": "n/a (no positives)",
+      "false_alarm": "2/2 (100%, 95% CI 34-100%)",
+      "precision": "0/2 (0%, 95% CI 0-66%)"
+     },
+     "B3-judge": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 0,
+      "TN": 2,
+      "recall": "n/a (no positives)",
+      "false_alarm": "0/2 (0%, 95% CI 0-66%)",
+      "precision": "n/a (never flagged)"
+     },
+     "B4-llmeval-tuned": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 0,
+      "TN": 2,
+      "recall": "n/a (no positives)",
+      "false_alarm": "0/2 (0%, 95% CI 0-66%)",
+      "precision": "n/a (never flagged)"
+     },
+     "MAREF-RA": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 0,
+      "TN": 2,
+      "recall": "n/a (no positives)",
+      "false_alarm": "0/2 (0%, 95% CI 0-66%)",
+      "precision": "n/a (never flagged)"
+     },
+     "MAREF-RF": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 0,
+      "TN": 2,
+      "recall": "n/a (no positives)",
+      "false_alarm": "0/2 (0%, 95% CI 0-66%)",
+      "precision": "n/a (never flagged)"
+     }
+    }
+   }
+  },
+  "FM_LEAK": {
+   "real": {
+    "applicable_runs": 10,
+    "positives": 8,
+    "detectors": {
+     "B0-always-pass": {
+      "TP": 0,
+      "FN": 8,
+      "FP": 0,
+      "TN": 2,
+      "recall": "0/8 (0%, 95% CI 0-32%)",
+      "false_alarm": "0/2 (0%, 95% CI 0-66%)",
+      "precision": "n/a (never flagged)"
+     },
+     "B1-llmeval-avg": {
+      "TP": 8,
+      "FN": 0,
+      "FP": 2,
+      "TN": 0,
+      "recall": "8/8 (100%, 95% CI 68-100%)",
+      "false_alarm": "2/2 (100%, 95% CI 34-100%)",
+      "precision": "8/10 (80%, 95% CI 49-94%)"
+     },
+     "B2-llmeval-gates": {
+      "TP": 8,
+      "FN": 0,
+      "FP": 2,
+      "TN": 0,
+      "recall": "8/8 (100%, 95% CI 68-100%)",
+      "false_alarm": "2/2 (100%, 95% CI 34-100%)",
+      "precision": "8/10 (80%, 95% CI 49-94%)"
+     },
+     "B3-judge": {
+      "TP": 5,
+      "FN": 3,
+      "FP": 0,
+      "TN": 2,
+      "recall": "5/8 (62%, 95% CI 31-86%)",
+      "false_alarm": "0/2 (0%, 95% CI 0-66%)",
+      "precision": "5/5 (100%, 95% CI 57-100%)"
+     },
+     "B4-llmeval-tuned": {
+      "TP": 5,
+      "FN": 3,
+      "FP": 0,
+      "TN": 2,
+      "recall": "5/8 (62%, 95% CI 31-86%)",
+      "false_alarm": "0/2 (0%, 95% CI 0-66%)",
+      "precision": "5/5 (100%, 95% CI 57-100%)"
+     },
+     "MAREF-RA": {
+      "TP": 8,
+      "FN": 0,
+      "FP": 0,
+      "TN": 2,
+      "recall": "8/8 (100%, 95% CI 68-100%)",
+      "false_alarm": "0/2 (0%, 95% CI 0-66%)",
+      "precision": "8/8 (100%, 95% CI 68-100%)"
+     },
+     "MAREF-RF": {
+      "TP": 5,
+      "FN": 3,
+      "FP": 0,
+      "TN": 2,
+      "recall": "5/8 (62%, 95% CI 31-86%)",
+      "false_alarm": "0/2 (0%, 95% CI 0-66%)",
+      "precision": "5/5 (100%, 95% CI 57-100%)"
+     }
+    }
+   },
+   "synthetic": {
+    "applicable_runs": 5,
+    "positives": 2,
+    "detectors": {
+     "B0-always-pass": {
+      "TP": 0,
+      "FN": 2,
+      "FP": 0,
+      "TN": 3,
+      "recall": "0/2 (0%, 95% CI 0-66%)",
+      "false_alarm": "0/3 (0%, 95% CI 0-56%)",
+      "precision": "n/a (never flagged)"
+     },
+     "B1-llmeval-avg": {
+      "TP": 2,
+      "FN": 0,
+      "FP": 0,
+      "TN": 3,
+      "recall": "2/2 (100%, 95% CI 34-100%)",
+      "false_alarm": "0/3 (0%, 95% CI 0-56%)",
+      "precision": "2/2 (100%, 95% CI 34-100%)"
+     },
+     "B2-llmeval-gates": {
+      "TP": 2,
+      "FN": 0,
+      "FP": 0,
+      "TN": 3,
+      "recall": "2/2 (100%, 95% CI 34-100%)",
+      "false_alarm": "0/3 (0%, 95% CI 0-56%)",
+      "precision": "2/2 (100%, 95% CI 34-100%)"
+     },
+     "B3-judge": {
+      "TP": 2,
+      "FN": 0,
+      "FP": 2,
+      "TN": 1,
+      "recall": "2/2 (100%, 95% CI 34-100%)",
+      "false_alarm": "2/3 (67%, 95% CI 21-94%)",
+      "precision": "2/4 (50%, 95% CI 15-85%)"
+     },
+     "B4-llmeval-tuned": {
+      "TP": 1,
+      "FN": 1,
+      "FP": 0,
+      "TN": 3,
+      "recall": "1/2 (50%, 95% CI 9-91%)",
+      "false_alarm": "0/3 (0%, 95% CI 0-56%)",
+      "precision": "1/1 (100%, 95% CI 21-100%)"
+     },
+     "MAREF-RA": {
+      "TP": 2,
+      "FN": 0,
+      "FP": 0,
+      "TN": 3,
+      "recall": "2/2 (100%, 95% CI 34-100%)",
+      "false_alarm": "0/3 (0%, 95% CI 0-56%)",
+      "precision": "2/2 (100%, 95% CI 34-100%)"
+     },
+     "MAREF-RF": {
+      "TP": 1,
+      "FN": 1,
+      "FP": 0,
+      "TN": 3,
+      "recall": "1/2 (50%, 95% CI 9-91%)",
+      "false_alarm": "0/3 (0%, 95% CI 0-56%)",
+      "precision": "1/1 (100%, 95% CI 21-100%)"
+     }
+    }
+   }
+  },
+  "FM_TOOL": {
+   "real": {
+    "applicable_runs": 15,
+    "positives": 0,
+    "detectors": {
+     "B0-always-pass": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 0,
+      "TN": 15,
+      "recall": "n/a (no positives)",
+      "false_alarm": "0/15 (0%, 95% CI 0-20%)",
+      "precision": "n/a (never flagged)"
+     },
+     "B1-llmeval-avg": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 15,
+      "TN": 0,
+      "recall": "n/a (no positives)",
+      "false_alarm": "15/15 (100%, 95% CI 80-100%)",
+      "precision": "0/15 (0%, 95% CI 0-20%)"
+     },
+     "B2-llmeval-gates": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 15,
+      "TN": 0,
+      "recall": "n/a (no positives)",
+      "false_alarm": "15/15 (100%, 95% CI 80-100%)",
+      "precision": "0/15 (0%, 95% CI 0-20%)"
+     },
+     "B3-judge": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 4,
+      "TN": 11,
+      "recall": "n/a (no positives)",
+      "false_alarm": "4/15 (27%, 95% CI 11-52%)",
+      "precision": "0/4 (0%, 95% CI 0-49%)"
+     },
+     "B4-llmeval-tuned": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 5,
+      "TN": 10,
+      "recall": "n/a (no positives)",
+      "false_alarm": "5/15 (33%, 95% CI 15-58%)",
+      "precision": "0/5 (0%, 95% CI 0-43%)"
+     },
+     "MAREF-RA": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 0,
+      "TN": 15,
+      "recall": "n/a (no positives)",
+      "false_alarm": "0/15 (0%, 95% CI 0-20%)",
+      "precision": "n/a (never flagged)"
+     },
+     "MAREF-RF": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 0,
+      "TN": 15,
+      "recall": "n/a (no positives)",
+      "false_alarm": "0/15 (0%, 95% CI 0-20%)",
+      "precision": "n/a (never flagged)"
+     }
+    }
+   },
+   "synthetic": {
+    "applicable_runs": 14,
+    "positives": 2,
+    "detectors": {
+     "B0-always-pass": {
+      "TP": 0,
+      "FN": 2,
+      "FP": 0,
+      "TN": 12,
+      "recall": "0/2 (0%, 95% CI 0-66%)",
+      "false_alarm": "0/12 (0%, 95% CI 0-24%)",
+      "precision": "n/a (never flagged)"
+     },
+     "B1-llmeval-avg": {
+      "TP": 2,
+      "FN": 0,
+      "FP": 5,
+      "TN": 7,
+      "recall": "2/2 (100%, 95% CI 34-100%)",
+      "false_alarm": "5/12 (42%, 95% CI 19-68%)",
+      "precision": "2/7 (29%, 95% CI 8-64%)"
+     },
+     "B2-llmeval-gates": {
+      "TP": 2,
+      "FN": 0,
+      "FP": 5,
+      "TN": 7,
+      "recall": "2/2 (100%, 95% CI 34-100%)",
+      "false_alarm": "5/12 (42%, 95% CI 19-68%)",
+      "precision": "2/7 (29%, 95% CI 8-64%)"
+     },
+     "B3-judge": {
+      "TP": 0,
+      "FN": 2,
+      "FP": 3,
+      "TN": 9,
+      "recall": "0/2 (0%, 95% CI 0-66%)",
+      "false_alarm": "3/12 (25%, 95% CI 9-53%)",
+      "precision": "0/3 (0%, 95% CI 0-56%)"
+     },
+     "B4-llmeval-tuned": {
+      "TP": 1,
+      "FN": 1,
+      "FP": 2,
+      "TN": 10,
+      "recall": "1/2 (50%, 95% CI 9-91%)",
+      "false_alarm": "2/12 (17%, 95% CI 5-45%)",
+      "precision": "1/3 (33%, 95% CI 6-79%)"
+     },
+     "MAREF-RA": {
+      "TP": 2,
+      "FN": 0,
+      "FP": 1,
+      "TN": 11,
+      "recall": "2/2 (100%, 95% CI 34-100%)",
+      "false_alarm": "1/12 (8%, 95% CI 1-35%)",
+      "precision": "2/3 (67%, 95% CI 21-94%)"
+     },
+     "MAREF-RF": {
+      "TP": 0,
+      "FN": 2,
+      "FP": 0,
+      "TN": 12,
+      "recall": "0/2 (0%, 95% CI 0-66%)",
+      "false_alarm": "0/12 (0%, 95% CI 0-24%)",
+      "precision": "n/a (never flagged)"
+     }
+    }
+   }
+  },
+  "FM_STATUS": {
+   "real": {
+    "applicable_runs": 10,
+    "positives": 0,
+    "detectors": {
+     "B0-always-pass": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 0,
+      "TN": 10,
+      "recall": "n/a (no positives)",
+      "false_alarm": "0/10 (0%, 95% CI 0-28%)",
+      "precision": "n/a (never flagged)"
+     },
+     "B1-llmeval-avg": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 5,
+      "TN": 5,
+      "recall": "n/a (no positives)",
+      "false_alarm": "5/10 (50%, 95% CI 24-76%)",
+      "precision": "0/5 (0%, 95% CI 0-43%)"
+     },
+     "B2-llmeval-gates": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 10,
+      "TN": 0,
+      "recall": "n/a (no positives)",
+      "false_alarm": "10/10 (100%, 95% CI 72-100%)",
+      "precision": "0/10 (0%, 95% CI 0-28%)"
+     },
+     "B3-judge": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 0,
+      "TN": 10,
+      "recall": "n/a (no positives)",
+      "false_alarm": "0/10 (0%, 95% CI 0-28%)",
+      "precision": "n/a (never flagged)"
+     },
+     "B4-llmeval-tuned": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 0,
+      "TN": 10,
+      "recall": "n/a (no positives)",
+      "false_alarm": "0/10 (0%, 95% CI 0-28%)",
+      "precision": "n/a (never flagged)"
+     },
+     "MAREF-RA": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 0,
+      "TN": 10,
+      "recall": "n/a (no positives)",
+      "false_alarm": "0/10 (0%, 95% CI 0-28%)",
+      "precision": "n/a (never flagged)"
+     },
+     "MAREF-RF": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 0,
+      "TN": 10,
+      "recall": "n/a (no positives)",
+      "false_alarm": "0/10 (0%, 95% CI 0-28%)",
+      "precision": "n/a (never flagged)"
+     }
+    }
+   },
+   "synthetic": {
+    "applicable_runs": 3,
+    "positives": 1,
+    "detectors": {
+     "B0-always-pass": {
+      "TP": 0,
+      "FN": 1,
+      "FP": 0,
+      "TN": 2,
+      "recall": "0/1 (0%, 95% CI 0-79%)",
+      "false_alarm": "0/2 (0%, 95% CI 0-66%)",
+      "precision": "n/a (never flagged)"
+     },
+     "B1-llmeval-avg": {
+      "TP": 1,
+      "FN": 0,
+      "FP": 0,
+      "TN": 2,
+      "recall": "1/1 (100%, 95% CI 21-100%)",
+      "false_alarm": "0/2 (0%, 95% CI 0-66%)",
+      "precision": "1/1 (100%, 95% CI 21-100%)"
+     },
+     "B2-llmeval-gates": {
+      "TP": 1,
+      "FN": 0,
+      "FP": 2,
+      "TN": 0,
+      "recall": "1/1 (100%, 95% CI 21-100%)",
+      "false_alarm": "2/2 (100%, 95% CI 34-100%)",
+      "precision": "1/3 (33%, 95% CI 6-79%)"
+     },
+     "B3-judge": {
+      "TP": 1,
+      "FN": 0,
+      "FP": 0,
+      "TN": 2,
+      "recall": "1/1 (100%, 95% CI 21-100%)",
+      "false_alarm": "0/2 (0%, 95% CI 0-66%)",
+      "precision": "1/1 (100%, 95% CI 21-100%)"
+     },
+     "B4-llmeval-tuned": {
+      "TP": 1,
+      "FN": 0,
+      "FP": 0,
+      "TN": 2,
+      "recall": "1/1 (100%, 95% CI 21-100%)",
+      "false_alarm": "0/2 (0%, 95% CI 0-66%)",
+      "precision": "1/1 (100%, 95% CI 21-100%)"
+     },
+     "MAREF-RA": {
+      "TP": 1,
+      "FN": 0,
+      "FP": 0,
+      "TN": 2,
+      "recall": "1/1 (100%, 95% CI 21-100%)",
+      "false_alarm": "0/2 (0%, 95% CI 0-66%)",
+      "precision": "1/1 (100%, 95% CI 21-100%)"
+     },
+     "MAREF-RF": {
+      "TP": 1,
+      "FN": 0,
+      "FP": 0,
+      "TN": 2,
+      "recall": "1/1 (100%, 95% CI 21-100%)",
+      "false_alarm": "0/2 (0%, 95% CI 0-66%)",
+      "precision": "1/1 (100%, 95% CI 21-100%)"
+     }
+    }
+   }
+  },
+  "FM_STRUCT": {
+   "real": {
+    "applicable_runs": 20,
+    "positives": 0,
+    "detectors": {
+     "B0-always-pass": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 0,
+      "TN": 20,
+      "recall": "n/a (no positives)",
+      "false_alarm": "0/20 (0%, 95% CI 0-16%)",
+      "precision": "n/a (never flagged)"
+     },
+     "B1-llmeval-avg": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 0,
+      "TN": 20,
+      "recall": "n/a (no positives)",
+      "false_alarm": "0/20 (0%, 95% CI 0-16%)",
+      "precision": "n/a (never flagged)"
+     },
+     "B2-llmeval-gates": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 0,
+      "TN": 20,
+      "recall": "n/a (no positives)",
+      "false_alarm": "0/20 (0%, 95% CI 0-16%)",
+      "precision": "n/a (never flagged)"
+     },
+     "B3-judge": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 0,
+      "TN": 20,
+      "recall": "n/a (no positives)",
+      "false_alarm": "0/20 (0%, 95% CI 0-16%)",
+      "precision": "n/a (never flagged)"
+     },
+     "B4-llmeval-tuned": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 0,
+      "TN": 20,
+      "recall": "n/a (no positives)",
+      "false_alarm": "0/20 (0%, 95% CI 0-16%)",
+      "precision": "n/a (never flagged)"
+     },
+     "MAREF-RA": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 0,
+      "TN": 20,
+      "recall": "n/a (no positives)",
+      "false_alarm": "0/20 (0%, 95% CI 0-16%)",
+      "precision": "n/a (never flagged)"
+     },
+     "MAREF-RF": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 0,
+      "TN": 20,
+      "recall": "n/a (no positives)",
+      "false_alarm": "0/20 (0%, 95% CI 0-16%)",
+      "precision": "n/a (never flagged)"
+     }
+    }
+   },
+   "synthetic": {
+    "applicable_runs": 4,
+    "positives": 0,
+    "detectors": {
+     "B0-always-pass": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 0,
+      "TN": 4,
+      "recall": "n/a (no positives)",
+      "false_alarm": "0/4 (0%, 95% CI 0-49%)",
+      "precision": "n/a (never flagged)"
+     },
+     "B1-llmeval-avg": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 0,
+      "TN": 4,
+      "recall": "n/a (no positives)",
+      "false_alarm": "0/4 (0%, 95% CI 0-49%)",
+      "precision": "n/a (never flagged)"
+     },
+     "B2-llmeval-gates": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 0,
+      "TN": 4,
+      "recall": "n/a (no positives)",
+      "false_alarm": "0/4 (0%, 95% CI 0-49%)",
+      "precision": "n/a (never flagged)"
+     },
+     "B3-judge": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 0,
+      "TN": 4,
+      "recall": "n/a (no positives)",
+      "false_alarm": "0/4 (0%, 95% CI 0-49%)",
+      "precision": "n/a (never flagged)"
+     },
+     "B4-llmeval-tuned": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 0,
+      "TN": 4,
+      "recall": "n/a (no positives)",
+      "false_alarm": "0/4 (0%, 95% CI 0-49%)",
+      "precision": "n/a (never flagged)"
+     },
+     "MAREF-RA": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 0,
+      "TN": 4,
+      "recall": "n/a (no positives)",
+      "false_alarm": "0/4 (0%, 95% CI 0-49%)",
+      "precision": "n/a (never flagged)"
+     },
+     "MAREF-RF": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 0,
+      "TN": 4,
+      "recall": "n/a (no positives)",
+      "false_alarm": "0/4 (0%, 95% CI 0-49%)",
+      "precision": "n/a (never flagged)"
+     }
+    }
+   }
+  },
+  "FM_CITE": {
+   "real": {
+    "applicable_runs": 5,
+    "positives": 0,
+    "detectors": {
+     "B0-always-pass": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 0,
+      "TN": 5,
+      "recall": "n/a (no positives)",
+      "false_alarm": "0/5 (0%, 95% CI 0-43%)",
+      "precision": "n/a (never flagged)"
+     },
+     "B1-llmeval-avg": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 5,
+      "TN": 0,
+      "recall": "n/a (no positives)",
+      "false_alarm": "5/5 (100%, 95% CI 57-100%)",
+      "precision": "0/5 (0%, 95% CI 0-43%)"
+     },
+     "B2-llmeval-gates": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 5,
+      "TN": 0,
+      "recall": "n/a (no positives)",
+      "false_alarm": "5/5 (100%, 95% CI 57-100%)",
+      "precision": "0/5 (0%, 95% CI 0-43%)"
+     },
+     "B3-judge": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 0,
+      "TN": 5,
+      "recall": "n/a (no positives)",
+      "false_alarm": "0/5 (0%, 95% CI 0-43%)",
+      "precision": "n/a (never flagged)"
+     },
+     "B4-llmeval-tuned": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 0,
+      "TN": 5,
+      "recall": "n/a (no positives)",
+      "false_alarm": "0/5 (0%, 95% CI 0-43%)",
+      "precision": "n/a (never flagged)"
+     },
+     "MAREF-RA": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 0,
+      "TN": 5,
+      "recall": "n/a (no positives)",
+      "false_alarm": "0/5 (0%, 95% CI 0-43%)",
+      "precision": "n/a (never flagged)"
+     },
+     "MAREF-RF": {
+      "TP": 0,
+      "FN": 0,
+      "FP": 0,
+      "TN": 5,
+      "recall": "n/a (no positives)",
+      "false_alarm": "0/5 (0%, 95% CI 0-43%)",
+      "precision": "n/a (never flagged)"
+     }
+    }
+   },
+   "synthetic": {
+    "applicable_runs": 9,
+    "positives": 1,
+    "detectors": {
+     "B0-always-pass": {
+      "TP": 0,
+      "FN": 1,
+      "FP": 0,
+      "TN": 8,
+      "recall": "0/1 (0%, 95% CI 0-79%)",
+      "false_alarm": "0/8 (0%, 95% CI 0-32%)",
+      "precision": "n/a (never flagged)"
+     },
+     "B1-llmeval-avg": {
+      "TP": 1,
+      "FN": 0,
+      "FP": 1,
+      "TN": 7,
+      "recall": "1/1 (100%, 95% CI 21-100%)",
+      "false_alarm": "1/8 (12%, 95% CI 2-47%)",
+      "precision": "1/2 (50%, 95% CI 9-91%)"
+     },
+     "B2-llmeval-gates": {
+      "TP": 1,
+      "FN": 0,
+      "FP": 1,
+      "TN": 7,
+      "recall": "1/1 (100%, 95% CI 21-100%)",
+      "false_alarm": "1/8 (12%, 95% CI 2-47%)",
+      "precision": "1/2 (50%, 95% CI 9-91%)"
+     },
+     "B3-judge": {
+      "TP": 1,
+      "FN": 0,
+      "FP": 1,
+      "TN": 7,
+      "recall": "1/1 (100%, 95% CI 21-100%)",
+      "false_alarm": "1/8 (12%, 95% CI 2-47%)",
+      "precision": "1/2 (50%, 95% CI 9-91%)"
+     },
+     "B4-llmeval-tuned": {
+      "TP": 0,
+      "FN": 1,
+      "FP": 1,
+      "TN": 7,
+      "recall": "0/1 (0%, 95% CI 0-79%)",
+      "false_alarm": "1/8 (12%, 95% CI 2-47%)",
+      "precision": "0/1 (0%, 95% CI 0-79%)"
+     },
+     "MAREF-RA": {
+      "TP": 1,
+      "FN": 0,
+      "FP": 1,
+      "TN": 7,
+      "recall": "1/1 (100%, 95% CI 21-100%)",
+      "false_alarm": "1/8 (12%, 95% CI 2-47%)",
+      "precision": "1/2 (50%, 95% CI 9-91%)"
+     },
+     "MAREF-RF": {
+      "TP": 1,
+      "FN": 0,
+      "FP": 0,
+      "TN": 8,
+      "recall": "1/1 (100%, 95% CI 21-100%)",
+      "false_alarm": "0/8 (0%, 95% CI 0-32%)",
+      "precision": "1/1 (100%, 95% CI 21-100%)"
+     }
+    }
+   }
+  },
+  "FM_INCONSISTENT": {
+   "real": {
+    "applicable_runs": 120,
+    "positives": 5,
+    "detectors": {
+     "B0-always-pass": {
+      "TP": 0,
+      "FN": 5,
+      "FP": 0,
+      "TN": 115,
+      "recall": "0/5 (0%, 95% CI 0-43%)",
+      "false_alarm": "0/115 (0%, 95% CI 0-3%)",
+      "precision": "n/a (never flagged)"
+     },
+     "B1-llmeval-avg": {
+      "TP": 5,
+      "FN": 0,
+      "FP": 63,
+      "TN": 52,
+      "recall": "5/5 (100%, 95% CI 57-100%)",
+      "false_alarm": "63/115 (55%, 95% CI 46-64%)",
+      "precision": "5/68 (7%, 95% CI 3-16%)"
+     },
+     "B2-llmeval-gates": {
+      "TP": 5,
+      "FN": 0,
+      "FP": 68,
+      "TN": 47,
+      "recall": "5/5 (100%, 95% CI 57-100%)",
+      "false_alarm": "68/115 (59%, 95% CI 50-68%)",
+      "precision": "5/73 (7%, 95% CI 3-15%)"
+     },
+     "B3-judge": {
+      "TP": 0,
+      "FN": 5,
+      "FP": 14,
+      "TN": 101,
+      "recall": "0/5 (0%, 95% CI 0-43%)",
+      "false_alarm": "14/115 (12%, 95% CI 7-19%)",
+      "precision": "0/14 (0%, 95% CI 0-22%)"
+     },
+     "B4-llmeval-tuned": {
+      "TP": 0,
+      "FN": 5,
+      "FP": 10,
+      "TN": 105,
+      "recall": "0/5 (0%, 95% CI 0-43%)",
+      "false_alarm": "10/115 (9%, 95% CI 5-15%)",
+      "precision": "0/10 (0%, 95% CI 0-28%)"
+     },
+     "MAREF-RA": {
+      "TP": 0,
+      "FN": 5,
+      "FP": 20,
+      "TN": 95,
+      "recall": "0/5 (0%, 95% CI 0-43%)",
+      "false_alarm": "20/115 (17%, 95% CI 12-25%)",
+      "precision": "0/20 (0%, 95% CI 0-16%)"
+     },
+     "MAREF-RF": {
+      "TP": 0,
+      "FN": 5,
+      "FP": 20,
+      "TN": 95,
+      "recall": "0/5 (0%, 95% CI 0-43%)",
+      "false_alarm": "20/115 (17%, 95% CI 12-25%)",
+      "precision": "0/20 (0%, 95% CI 0-16%)"
+     }
+    }
+   },
+   "synthetic": {
+    "applicable_runs": 12,
+    "positives": 6,
+    "detectors": {
+     "B0-always-pass": {
+      "TP": 0,
+      "FN": 6,
+      "FP": 0,
+      "TN": 6,
+      "recall": "0/6 (0%, 95% CI 0-39%)",
+      "false_alarm": "0/6 (0%, 95% CI 0-39%)",
+      "precision": "n/a (never flagged)"
+     },
+     "B1-llmeval-avg": {
+      "TP": 4,
+      "FN": 2,
+      "FP": 3,
+      "TN": 3,
+      "recall": "4/6 (67%, 95% CI 30-90%)",
+      "false_alarm": "3/6 (50%, 95% CI 19-81%)",
+      "precision": "4/7 (57%, 95% CI 25-84%)"
+     },
+     "B2-llmeval-gates": {
+      "TP": 4,
+      "FN": 2,
+      "FP": 3,
+      "TN": 3,
+      "recall": "4/6 (67%, 95% CI 30-90%)",
+      "false_alarm": "3/6 (50%, 95% CI 19-81%)",
+      "precision": "4/7 (57%, 95% CI 25-84%)"
+     },
+     "B3-judge": {
+      "TP": 2,
+      "FN": 4,
+      "FP": 0,
+      "TN": 6,
+      "recall": "2/6 (33%, 95% CI 10-70%)",
+      "false_alarm": "0/6 (0%, 95% CI 0-39%)",
+      "precision": "2/2 (100%, 95% CI 34-100%)"
+     },
+     "B4-llmeval-tuned": {
+      "TP": 1,
+      "FN": 5,
+      "FP": 0,
+      "TN": 6,
+      "recall": "1/6 (17%, 95% CI 3-56%)",
+      "false_alarm": "0/6 (0%, 95% CI 0-39%)",
+      "precision": "1/1 (100%, 95% CI 21-100%)"
+     },
+     "MAREF-RA": {
+      "TP": 6,
+      "FN": 0,
+      "FP": 0,
+      "TN": 6,
+      "recall": "6/6 (100%, 95% CI 61-100%)",
+      "false_alarm": "0/6 (0%, 95% CI 0-39%)",
+      "precision": "6/6 (100%, 95% CI 61-100%)"
+     },
+     "MAREF-RF": {
+      "TP": 6,
+      "FN": 0,
+      "FP": 0,
+      "TN": 6,
+      "recall": "6/6 (100%, 95% CI 61-100%)",
+      "false_alarm": "0/6 (0%, 95% CI 0-39%)",
+      "precision": "6/6 (100%, 95% CI 61-100%)"
+     }
+    }
+   }
+  }
+ },
+ "paired": {
+  "all: MAREF-RA vs B2-llmeval-gates": {
+   "agreement_diff": 0.257,
+   "ci95": [
+    0.097,
+    0.419
+   ],
+   "n": 187,
+   "clusters": 24
+  },
+  "all: MAREF-RF vs B2-llmeval-gates": {
+   "agreement_diff": 0.251,
+   "ci95": [
+    0.091,
+    0.415
+   ],
+   "n": 187,
+   "clusters": 24
+  },
+  "all: MAREF-RF vs B1-llmeval-avg": {
+   "agreement_diff": 0.209,
+   "ci95": [
+    0.05,
+    0.367
+   ],
+   "n": 187,
+   "clusters": 24
+  },
+  "all: MAREF-RA vs B1-llmeval-avg": {
+   "agreement_diff": 0.214,
+   "ci95": [
+    0.058,
+    0.37
+   ],
+   "n": 187,
+   "clusters": 24
+  },
+  "all: MAREF-RA vs B4-llmeval-tuned": {
+   "agreement_diff": -0.037,
+   "ci95": [
+    -0.181,
+    0.104
+   ],
+   "n": 187,
+   "clusters": 24
+  },
+  "all: MAREF-RF vs B4-llmeval-tuned": {
+   "agreement_diff": -0.043,
+   "ci95": [
+    -0.19,
+    0.102
+   ],
+   "n": 187,
+   "clusters": 24
+  },
+  "all: MAREF-RA vs B0-always-pass": {
+   "agreement_diff": -0.016,
+   "ci95": [
+    -0.158,
+    0.119
+   ],
+   "n": 187,
+   "clusters": 24
+  },
+  "all: MAREF-RF vs B3-judge": {
+   "agreement_diff": -0.086,
+   "ci95": [
+    -0.214,
+    0.049
+   ],
+   "n": 187,
+   "clusters": 24
+  },
+  "all: MAREF-RA vs B3-judge": {
+   "agreement_diff": -0.08,
+   "ci95": [
+    -0.206,
+    0.053
+   ],
+   "n": 187,
+   "clusters": 24
+  },
+  "real: MAREF-RA vs B2-llmeval-gates": {
+   "agreement_diff": 0.292,
+   "ci95": [
+    0.092,
+    0.492
+   ],
+   "n": 120,
+   "clusters": 24
+  },
+  "real: MAREF-RF vs B2-llmeval-gates": {
+   "agreement_diff": 0.292,
+   "ci95": [
+    0.092,
+    0.492
+   ],
+   "n": 120,
+   "clusters": 24
+  },
+  "real: MAREF-RF vs B1-llmeval-avg": {
+   "agreement_diff": 0.25,
+   "ci95": [
+    0.067,
+    0.442
+   ],
+   "n": 120,
+   "clusters": 24
+  },
+  "real: MAREF-RA vs B1-llmeval-avg": {
+   "agreement_diff": 0.25,
+   "ci95": [
+    0.067,
+    0.442
+   ],
+   "n": 120,
+   "clusters": 24
+  },
+  "real: MAREF-RA vs B4-llmeval-tuned": {
+   "agreement_diff": -0.183,
+   "ci95": [
+    -0.392,
+    0.025
+   ],
+   "n": 120,
+   "clusters": 24
+  },
+  "real: MAREF-RF vs B4-llmeval-tuned": {
+   "agreement_diff": -0.183,
+   "ci95": [
+    -0.392,
+    0.025
+   ],
+   "n": 120,
+   "clusters": 24
+  },
+  "real: MAREF-RA vs B0-always-pass": {
+   "agreement_diff": -0.183,
+   "ci95": [
+    -0.408,
+    0.025
+   ],
+   "n": 120,
+   "clusters": 24
+  },
+  "real: MAREF-RF vs B3-judge": {
+   "agreement_diff": -0.15,
+   "ci95": [
+    -0.342,
+    0.033
+   ],
+   "n": 120,
+   "clusters": 24
+  },
+  "real: MAREF-RA vs B3-judge": {
+   "agreement_diff": -0.15,
+   "ci95": [
+    -0.342,
+    0.033
+   ],
+   "n": 120,
+   "clusters": 24
+  },
+  "synthetic: MAREF-RA vs B2-llmeval-gates": {
+   "agreement_diff": 0.194,
+   "ci95": [
+    0.028,
+    0.353
+   ],
+   "n": 67,
+   "clusters": 24
+  },
+  "synthetic: MAREF-RF vs B2-llmeval-gates": {
+   "agreement_diff": 0.179,
+   "ci95": [
+    0.011,
+    0.344
+   ],
+   "n": 67,
+   "clusters": 24
+  },
+  "synthetic: MAREF-RF vs B1-llmeval-avg": {
+   "agreement_diff": 0.134,
+   "ci95": [
+    -0.036,
+    0.297
+   ],
+   "n": 67,
+   "clusters": 24
+  },
+  "synthetic: MAREF-RA vs B1-llmeval-avg": {
+   "agreement_diff": 0.149,
+   "ci95": [
+    -0.016,
+    0.307
+   ],
+   "n": 67,
+   "clusters": 24
+  },
+  "synthetic: MAREF-RA vs B4-llmeval-tuned": {
+   "agreement_diff": 0.224,
+   "ci95": [
+    0.097,
+    0.371
+   ],
+   "n": 67,
+   "clusters": 24
+  },
+  "synthetic: MAREF-RF vs B4-llmeval-tuned": {
+   "agreement_diff": 0.209,
+   "ci95": [
+    0.083,
+    0.353
+   ],
+   "n": 67,
+   "clusters": 24
+  },
+  "synthetic: MAREF-RA vs B0-always-pass": {
+   "agreement_diff": 0.284,
+   "ci95": [
+    0.175,
+    0.417
+   ],
+   "n": 67,
+   "clusters": 24
+  },
+  "synthetic: MAREF-RF vs B3-judge": {
+   "agreement_diff": 0.03,
+   "ci95": [
+    -0.079,
+    0.18
+   ],
+   "n": 67,
+   "clusters": 24
+  },
+  "synthetic: MAREF-RA vs B3-judge": {
+   "agreement_diff": 0.045,
+   "ci95": [
+    -0.07,
+    0.204
+   ],
+   "n": 67,
+   "clusters": 24
+  }
+ },
+ "distinctness_decision": {
+  "criterion_1_agreement_ci_lower_bound_above_0": {
+   "holds": true,
+   "all": {
+    "agreement_diff": 0.257,
+    "ci95": [
+     0.097,
+     0.419
+    ],
+    "n": 187,
+    "clusters": 24
+   },
+   "real": {
+    "agreement_diff": 0.292,
+    "ci95": [
+     0.092,
+     0.492
+    ],
+    "n": 120,
+    "clusters": 24
+   }
+  },
+  "criterion_2_real_false_alarm_not_higher_than_llmeval": {
+   "holds": true,
+   "maref_ra": 0.26785714285714285,
+   "b2": 0.5803571428571429
+  },
+  "criterion_3_trajectory_only_mode": {
+   "holds": false,
+   "modes": [
+    {
+     "fm": "FM_INDUCED",
+     "positives": 0,
+     "maref_ra_recall": "0/0",
+     "b2_recall": "0/0",
+     "qualifies": false,
+     "positives_by_source": {
+      "real": 0,
+      "synthetic": 0
+     }
+    },
+    {
+     "fm": "FM_ACTION_CLAIM",
+     "positives": 5,
+     "maref_ra_recall": "5/5",
+     "b2_recall": "4/5",
+     "qualifies": false,
+     "positives_by_source": {
+      "real": 0,
+      "synthetic": 5
+     }
+    },
+    {
+     "fm": "FM_TOOL",
+     "positives": 2,
+     "maref_ra_recall": "2/2",
+     "b2_recall": "2/2",
+     "qualifies": false,
+     "positives_by_source": {
+      "real": 0,
+      "synthetic": 2
+     }
+    },
+    {
+     "fm": "FM_STATUS",
+     "positives": 1,
+     "maref_ra_recall": "1/1",
+     "b2_recall": "1/1",
+     "qualifies": false,
+     "positives_by_source": {
+      "real": 0,
+      "synthetic": 1
+     }
+    }
+   ]
+  },
+  "verdict": "MIXED: agreement and false alarms hold, no trajectory-only failure mode qualifies"
+ }
+}
