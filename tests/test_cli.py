@@ -1,5 +1,8 @@
 """CLI behaviour on tiny hand-made inputs (not benchmark data)."""
 import json
+from pathlib import Path
+
+import pytest
 
 from maref.cli import evaluate_all, load_runs, main
 
@@ -45,3 +48,19 @@ def test_set_id_groups_repeats_for_consistency(tmp_path):
 def test_schema_command_prints_json(capsys):
     assert main(["schema", "run"]) == 0
     assert json.loads(capsys.readouterr().out)["$id"] == "maref-run/1"
+
+
+def test_every_benchmark_run_and_task_validates_against_the_published_json_schemas():
+    jsonschema = pytest.importorskip("jsonschema")
+    from importlib import resources
+    root = Path(__file__).resolve().parent.parent / "benchmark" / "data"
+    run_schema = json.loads(resources.files("maref").joinpath("schemas", "run.schema.json").read_text())
+    task_schema = json.loads(resources.files("maref").joinpath("schemas", "task.schema.json").read_text())
+    n = 0
+    for d in (root / "runs", root / "synthetic" / "runs"):
+        for p in sorted(d.glob("*.json")):
+            jsonschema.validate(json.loads(p.read_text()), run_schema)
+            n += 1
+    assert n == 382
+    for t in json.loads((root / "tasks.json").read_text()).values():
+        jsonschema.validate(t, task_schema)

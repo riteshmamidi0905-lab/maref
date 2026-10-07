@@ -215,16 +215,22 @@ def main():
     dest.mkdir(parents=True, exist_ok=True)
     if a.split == "test":
         (ROOT / "results" / "TEST-RUN.lock").write_text(json.dumps({"maref_root_sha256": maref_root, "benchmark_root_sha256": root_hash, "out": str(dest), "judge": a.judge}, indent=1) + "\n")
-    for tag, lab in (("frozen", labels_frozen), ("adjudicated", labels_adj)):
+    def with_set_level(lab):
+        """SECONDARY label definition (declared after the dev results were seen): a run counts as failed if its oracle/construction failed OR it belongs to a set labelled inconsistent. The primary definition (FM_ANY) ignores set-level
+        inconsistency, which makes MAREF's correct set-level detections look like false alarms on runs whose individual answers are fine."""
+        return {r: dict(v, FM_ANY=int(bool(v["FM_ANY"]) or v.get("FM_INCONSISTENT") == 1)) for r, v in lab.items()}
+    variants = (("frozen", labels_frozen, "results.json"), ("adjudicated", labels_adj, "results-adjudicated.json"),
+                ("frozen+set-level", with_set_level(labels_frozen), "results-anyset.json"), ("adjudicated+set-level", with_set_level(labels_adj), "results-adjudicated-anyset.json"))
+    for tag, lab, fname in variants:
         rep = build_report(det, lab, runs, source, names, dict(meta, labels=tag))
-        if a.split == "test":
+        if a.split == "test" and tag == "frozen":
             rep["distinctness_decision"] = decision(rep)
-        (dest / ("results.json" if tag == "frozen" else "results-adjudicated.json")).write_text(json.dumps(rep, indent=1) + "\n")
+        (dest / fname).write_text(json.dumps(rep, indent=1) + "\n")
         if tag == "frozen":
             print(json.dumps({s: {n: (v["agreement_with_labels"], v["recall"], v["false_alarm"], v["abstained"]) for n, v in d["detectors"].items()} for s, d in rep["by_source"].items()}, indent=1))
             if "distinctness_decision" in rep:
                 print("DECISION (frozen labels):", rep["distinctness_decision"]["verdict"])
-    (dest / "per_run.json").write_text(json.dumps({r: {"labels": labels_frozen[r], "labels_adjudicated": labels_adj[r], "source": source[r], "detectors": {n: det[r][n] for n in det[r]}} for r in runs}, indent=1, default=str) + "\n")
+    (dest / "per_run.json").write_text(json.dumps({r: {"labels": labels_frozen[r], "labels_adjudicated": labels_adj[r], "labels_anyset": with_set_level({r: labels_frozen[r]})[r], "source": source[r], "detectors": {n: det[r][n] for n in det[r]}} for r in runs}, indent=1, default=str) + "\n")
     return 0
 
 
