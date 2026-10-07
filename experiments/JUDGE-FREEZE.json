@@ -1,0 +1,11 @@
+{
+ "prompt_sha256": "4f00d42f0953a3d6a00e3bde4733e2596801ac43db4e66c451e06ee856a4ad93",
+ "frozen": "2026-10-07, after a 4-run format smoke test on dev runs (no prompt change followed), before the judge was run on the benchmark",
+ "model": "qwen3-4b-instruct-2507-q4_k_m (same weights as the run generator; self-judging bias possible)",
+ "inference": {
+  "temperature": 0,
+  "seed": 20260101,
+  "max_tokens": 80,
+  "response_format": "json_object"
+ }
+}

@@ -37,7 +37,7 @@ Labels for real runs come mechanically from ARB's oracles; synthetic labels from
 python benchmark/build.py --arb ../agent-runtime-bench --tags pass1 sample11 sample12 sample13 sample14   # rebuild (deterministic)
 python experiments/run_experiment.py --split dev --out results/dev                                            # allowed while developing
 python experiments/run_experiment.py --split test --out results/test --judge results/judge/judge_verdicts.json  # once, frozen version only
-pytest -q                                                                                                     # 27 tests
+pytest -q                                                                                                     # 28 tests
 ```
 
 ## Honest limits (short list; the long one is in the docs)

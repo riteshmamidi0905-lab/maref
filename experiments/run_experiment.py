@@ -210,7 +210,7 @@ def main():
             if rid in j:
                 det[rid]["B3-judge"] = {"flagged": bool(j[rid]["flag"]), "abstain": False, "fm": {}, "parse_error": bool(j[rid].get("parse_error"))}
     names = sorted({n for r in det.values() for n in r})
-    meta = {"benchmark_root_sha256": root_hash, "maref_root_sha256": maref_root, "maref_frozen": maref_frozen, "split": a.split, "judge_file": a.judge}
+    meta = {"benchmark_root_sha256": root_hash, "maref_root_sha256": maref_root, "maref_frozen": maref_frozen, "split": a.split, "judge_file": a.judge, "judge_sha256": hashlib.sha256(Path(a.judge).read_bytes()).hexdigest() if a.judge else None}
     dest = Path(a.out)
     dest.mkdir(parents=True, exist_ok=True)
     if a.split == "test":
