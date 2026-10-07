@@ -91,3 +91,6 @@ empirically; it is not evidence that MAREF is a better *output* evaluator. The `
 If B4 or B3 matches or beats MAREF, that is reported as a result, not explained away.
 
 **Label noise.** Real-run labels come from ARB-1's oracles, whose frozen decline lexicon mis-graded 4 honest declines (documented in `BENCHMARK.md` and in ARB's `docs/RESULTS.md`). Every result is therefore reported twice from the same detector outputs: against the frozen labels (**the headline**, which the rule uses) and against `experiments/adjudication.json` (a sensitivity analysis by the same author; not independent; not part of the freeze).
+
+**Two label definitions.** The primary run-level label is `FM_ANY` (the ARB oracle failed, or the synthetic script injected a failure). It ignores *set-level* inconsistency, so a detector that correctly fails every run of an inconsistent set is charged with false alarms on runs whose individual answers are fine.
+A **secondary** definition (`FM_ANY` or the run belongs to a set labelled `FM_INCONSISTENT`; `results-*-anyset.json`) was declared **after** the dev results were seen, because of that artefact. The pre-registered decision rule uses the primary label only; the secondary is reported beside it and is exploratory.
