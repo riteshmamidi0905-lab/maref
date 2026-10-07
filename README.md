@@ -4,7 +4,7 @@ A small, dependency-free Python library that evaluates **a run of an agent** (ob
 Each of eight dimensions returns `PASS`, `FAIL`, `NA` (does not apply) or `UNDETERMINED` (applies, but the information to decide is missing); a failure on any gated dimension fails the run; a score is reported but never gates.
 Every failure carries a code from a fixed taxonomy, the evidence, and a confidence class (`deterministic` / `heuristic` / `judge`).
 
-> **Status: research prototype, evaluated on one small model and a benchmark written by the same AI assistant that wrote the checkers. No human annotation. Read `docs/SPEC.md` (what it is and is not) and `docs/EVALUATION.md` (what was measured, with intervals and negative results) before quoting anything.**
+> **Status: research prototype with a mixed result, evaluated on one small model and a benchmark written by the same AI assistant that wrote the checkers. No human annotation. Read `docs/SPEC.md` (what it is and is not) and `docs/EVALUATION.md` (what was measured, with intervals and negative results) before quoting anything.**
 
 ## Why it exists, and what is not new
 `llmeval` scores an output string. `ai-agent-from-scratch` has a small run-level evaluator. MAREF is neither "the first agent evaluator" nor a better *output* scorer. It adds, specifically: applicability-aware verdicts (never a silent 1.0), hard-gate veto aggregation,
@@ -39,6 +39,11 @@ python experiments/run_experiment.py --split dev --out results/dev              
 python experiments/run_experiment.py --split test --out results/test --judge results/judge/judge_verdicts.json  # once, frozen version only
 pytest -q                                                                                                     # 28 tests
 ```
+
+## Result of the one-time test evaluation (read `docs/EVALUATION.md`)
+On the held-out test split (187 runs, 24 task clusters) the frozen v0.1.0 flagged **every** failing run (33/33) and **23%** of clean runs (36/154; 27% on real runs, concentrated in six tasks whose five runs were all flagged).
+It beats llmeval's shipped defaults on run-level agreement, but **not** an always-pass baseline, a dev-fitted llmeval, or a 4B judge. On dev it looked better (93% agreement, 7% false alarms) because the heuristics were tuned there. Pre-registered distinctness verdict: **MIXED**.
+Root causes of the false alarms (a lexicon decision class, numbered-list markers read as numbers, a repeated-failing-call rule that ignores a requested retry) are documented; fixes were deliberately **not** made, because the test split can only be used once.
 
 ## Honest limits (short list; the long one is in the docs)
 One author for tasks, oracles, labels, checkers and analysis. One small quantised model. The real model produced **zero** fabrications, false action claims, wrong-tool, status or structure failures, so recall for those modes is measured on synthetic runs only.
