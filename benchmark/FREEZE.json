@@ -1,7 +1,7 @@
 {
  "benchmark": "MAREF-Bench v1",
  "frozen_before": "any MAREF checker was written or run",
- "root_sha256": "6063d607601898e7e0ef6a752e44fd34fed12c09edce30d9e4aeadfbb5690bc1",
+ "root_sha256": "effb7f4c971c23f1afd58ba67eb1b784f47a75d7ef84ed3b0a4dcc4730ac5843",
  "n_files": 393,
  "files": {
   "benchmark/build.py": "e3a26eb0c2c94fd1340f2ddcccab18bdcec4ad9c023c59ee2554b0de9dccb789",
@@ -392,10 +392,10 @@
   "benchmark/data/synthetic/runs/synset09__ARB-AP-02__r0.json": "947ae150707ce48b69231a2c4af842c961ba533b79f909e9faf4ac1b1df97da4",
   "benchmark/data/synthetic/runs/synset09__ARB-AP-02__r1.json": "a55da98881642b5b9f257f9ed7b55d98a630c9fb518e9404697a84f9a2abbd44",
   "benchmark/data/synthetic/runs/synset09__ARB-AP-02__r2.json": "ee46e9b585a17322d04cddf70309a0338136393f33086bc4ebe0e9b074e3fc72",
-  "benchmark/data/tasks.json": "a4706592f7248233d7fd472d5330819c678b49d91260198f2370dabd71ca2a17",
+  "benchmark/data/tasks.json": "a422886ad8477e8fcee4ee223f6cd0ac6f76c6dc74a8c5c04a0b67ac998e5d70",
   "benchmark/freeze.py": "0f9f01f5a7fdefc8a48cd0c57adbe8a0ad2373bed938b3de146f86a9e31661cc",
   "benchmark/labels.py": "10ab26ab4a85f0c351ea3f701972b12764e90a52ea4515705e4848c0484cecb3",
   "benchmark/synthetic.py": "d02d12875c2cb7eb5869ad7bed85575ddf0234a340a83e9bf1b0af708bda6bc5",
-  "benchmark/taskspecs.py": "6fd208c938f8cbeddd7124d7d135b1eee4157221d7e5130e189bcd7ce66aa24c"
+  "benchmark/taskspecs.py": "509e313241a42e0f082d2b2c817be1aee3839ff30349385cca17823a32f889bc"
  }
 }

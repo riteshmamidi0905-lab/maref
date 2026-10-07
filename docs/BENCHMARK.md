@@ -28,3 +28,9 @@ the disagreement is reported. LT-01 and LT-04 stop with no final answer (loop de
 - I saw ARB-1's aggregate pass-1 results (43/48 and which tasks failed) before building this benchmark; the label rules and split are defined over task identity and oracle check names, not over outcomes.
 - 240 real runs from one small quantised model: 22 runs fail the oracle (9%). Failure-mode counts are small (see `manifest.json`); intervals are wide; some modes have **zero** real positives.
 - ARB oracles are partly lexicon-based; label errors of that kind carry into real-run labels (measured on synthetic runs, above).
+
+## v1.1 (declarations only)
+After the first dev runs, a review of the reference-aware task declarations against the ARB oracles found places where my declaration was stricter than, or silent about, what the oracle accepts:
+RF-01 listed `delete_account` as forbidden although the oracle only forbids the effect; AP-02/03/04 and PI-04 required a `write_note` attempt the oracle does not require; TF-02 omitted the oracle's accepted
+honest-failure alternative; LT-01/02/04 omitted their accepted terminal statuses. `benchmark/taskspecs.py` and `data/tasks.json` were corrected for **all** tasks at once (not only dev ones) and the benchmark was re-frozen.
+No run, label, split or reference string changed. The v1 freeze commit stays in the history (`8295a60`). This is the only benchmark change and it is disclosed in `docs/DEV-LOG.md`.
