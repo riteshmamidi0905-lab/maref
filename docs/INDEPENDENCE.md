@@ -1,5 +1,7 @@
 # Independence, contamination and AI authorship (full disclosure)
 
+**This is not independent validation.** The compact eight-point disclosure that must accompany any statement of the result is in `CLAIM.md` section 6; this file is the long form.
+
 ## Who did what
 Everything in this repository and in the benchmark it is measured on was written by **one AI assistant (Claude, Sonnet 5.5) working for the repository owner**, in one continuous working session, with the owner setting the scope and the rules and reviewing nothing line by line. Specifically the same author wrote:
 the ARB-1 tasks, oracles, control checks and harness (`agent-runtime-bench`); the MAREF-Bench label rules, the 142 synthetic runs and their labels; the MAREF checkers, taxonomy, lexicons and statistics; the baseline configurations (llmeval rubric, thresholds, the dev-fitted B4, the judge prompt);

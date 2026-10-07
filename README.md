@@ -37,13 +37,16 @@ Labels for real runs come mechanically from ARB's oracles; synthetic labels from
 python benchmark/build.py --arb ../agent-runtime-bench --tags pass1 sample11 sample12 sample13 sample14   # rebuild (deterministic)
 python experiments/run_experiment.py --split dev --out results/dev                                            # allowed while developing
 python experiments/run_experiment.py --split test --out results/test --judge results/judge/judge_verdicts.json  # once, frozen version only
-pytest -q                                                                                                     # 28 tests
+pytest -q                                                                                                     # 33 tests
 ```
 
-## Result of the one-time test evaluation (read `docs/EVALUATION.md`)
-On the held-out test split (187 runs, 24 task clusters) the frozen v0.1.0 flagged **every** failing run (33/33) and **23%** of clean runs (36/154; 27% on real runs, concentrated in six tasks whose five runs were all flagged).
-It beats llmeval's shipped defaults on run-level agreement, but **not** an always-pass baseline, a dev-fitted llmeval, or a 4B judge. On dev it looked better (93% agreement, 7% false alarms) because the heuristics were tuned there. Pre-registered distinctness verdict: **MIXED**.
-Root causes of the false alarms (a lexicon decision class, numbered-list markers read as numbers, a repeated-failing-call rule that ignores a requested retry) are documented; fixes were deliberately **not** made, because the test split can only be used once.
+## Result of the one-time test evaluation (canonical wording: `docs/CLAIM.md`; statistics: `docs/EVALUATION.md`)
+**Research prototype · pre-registered distinctness verdict: MIXED** (`MIXED: agreement and false alarms hold, no trajectory-only failure mode qualifies`). Test split, reference-aware, frozen primary labels, 187 runs: **33/33** labelled failures detected, **36/154** clean runs falsely flagged, **151/187** overall agreement.
+* **Against llmeval as shipped (pre-registered comparison): passed.** MAREF had significantly higher run-level agreement than llmeval hard gates under the clustered comparison (pooled **+0.257**, 95% [0.097, 0.419]; real runs **+0.292**, [0.092, 0.492]) and a lower real-run false-alarm rate (**30/112, ~27%** vs **65/112, ~58%**).
+* **Against stronger baselines: better overall agreement not established.** Always-pass 154/187, dev-fitted llmeval 158/187, local 4B judge 166/187 vs MAREF 151/187; all paired intervals include zero.
+* **Trajectory-specific distinctness: the third criterion failed.** No trajectory-only failure mode had at least 5 positives with MAREF recall ≥ 80% and llmeval-gates recall ≤ 50%.
+On dev, where it was tuned, it looked better (93% agreement, 7% false alarms). Root causes of the test false alarms (a lexicon decision class, numbered-list markers read as numbers, a repeated-failing-call rule that ignores a requested retry) are documented; fixes were deliberately **not** made, because the test split can be used only once.
+**This is not independent validation:** the same AI author wrote the ARB tasks and oracles, the benchmark, the checkers, the baselines and the analysis; there was no independent human labelling; ARB results were known before the benchmark was built; MAREF was tuned on dev; some test answers had been read during ARB analysis; v1.1 declaration corrections followed the initial dev work; the test split is spent; and the oracle and MAREF share lexicon blind spots (`docs/INDEPENDENCE.md`).
 
 ## Honest limits (short list; the long one is in the docs)
 One author for tasks, oracles, labels, checkers and analysis. One small quantised model. The real model produced **zero** fabrications, false action claims, wrong-tool, status or structure failures, so recall for those modes is measured on synthetic runs only.
