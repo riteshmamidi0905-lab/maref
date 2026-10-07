@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "maref"
+version = "0.1.0"
+description = "MAREF: Multi-Dimensional Agent Reliability Evaluation Framework. Run-level (trajectory) evaluation with applicability-aware verdicts, hard gates and uncertainty."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = []                                  # the core is standard-library only
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.5", "jsonschema>=4"]
+baselines = [
+  # the existing output-level evaluator, pinned: used ONLY as a comparison baseline in experiments/, never by the core
+  "llmeval @ git+https://github.com/riteshmamidi0905-lab/llm-eval-framework.git@99e6121db8a9c07cac5f987007a746136a53c09a",
+]
+
+[project.scripts]
+maref = "maref.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["maref*"]
+
+[tool.setuptools.package-data]
+maref = ["schema/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 170
+target-version = "py310"
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = ["E501", "E731", "E741", "B007"]

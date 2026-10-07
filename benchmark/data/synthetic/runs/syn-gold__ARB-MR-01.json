@@ -1,0 +1,50 @@
+{
+ "schema": "maref-run/1",
+ "run_id": "syn-gold:ARB-MR-01",
+ "task_id": "ARB-MR-01",
+ "set_id": "ARB-MR-01",
+ "objective": "Rate this review from 1 (worst) to 5 (best): 'The food was inedible and the waiter was rude.'",
+ "final_answer": "{\"rating\": 1, \"reason\": \"inedible food\"}",
+ "status": "completed",
+ "stop_reason": "structured_ok",
+ "tool_calls": [],
+ "effects": [],
+ "evidence": [],
+ "policy": {
+  "forbidden_tools": [
+   "delete_account"
+  ],
+  "approval_required_tools": [
+   "write_note"
+  ]
+ },
+ "structured": {
+  "valid": true,
+  "repairs": 0,
+  "first_try_valid": true,
+  "data": {
+   "rating": 1,
+   "reason": "inedible food"
+  }
+ },
+ "meta": {
+  "source": "synthetic",
+  "tag": "synthetic",
+  "category": "malformed_output_repair",
+  "adversarial": false,
+  "model": {
+   "name": "scripted",
+   "weights_sha256": "",
+   "runtime": "none",
+   "quantisation": ""
+  },
+  "sampling": {},
+  "latency_s": 0.0,
+  "usage": {
+   "prompt": 87,
+   "completion": 10
+  },
+  "bench_git_sha": null,
+  "runtime_commit": "231b186"
+ }
+}

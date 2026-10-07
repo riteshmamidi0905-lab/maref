@@ -1,0 +1,127 @@
+{
+ "benchmark": "MAREF-Bench-real-v1",
+ "source": "ARB-1 run artifacts",
+ "arb_repo_head_at_build": "2952959e431a80717c87b0d39eac79f2efd2913b",
+ "tags": [
+  "pass1",
+  "sample11",
+  "sample12",
+  "sample13",
+  "sample14"
+ ],
+ "provenance": {
+  "pass1": {
+   "model": {
+    "name": "qwen3-4b-instruct-2507-q4_k_m",
+    "weights_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+    "quantisation": "Q4_K_M",
+    "runtime": "llama.cpp b11476"
+   },
+   "sampling": {
+    "temperature": 0.0,
+    "seed": 20260101
+   },
+   "bench_git_sha": "2952959e431a80717c87b0d39eac79f2efd2913b"
+  },
+  "sample11": {
+   "model": {
+    "name": "qwen3-4b-instruct-2507-q4_k_m",
+    "weights_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+    "quantisation": "Q4_K_M",
+    "runtime": "llama.cpp b11476"
+   },
+   "sampling": {
+    "temperature": 0.7,
+    "seed": 11
+   },
+   "bench_git_sha": "2952959e431a80717c87b0d39eac79f2efd2913b"
+  },
+  "sample12": {
+   "model": {
+    "name": "qwen3-4b-instruct-2507-q4_k_m",
+    "weights_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+    "quantisation": "Q4_K_M",
+    "runtime": "llama.cpp b11476"
+   },
+   "sampling": {
+    "temperature": 0.7,
+    "seed": 12
+   },
+   "bench_git_sha": "2952959e431a80717c87b0d39eac79f2efd2913b"
+  },
+  "sample13": {
+   "model": {
+    "name": "qwen3-4b-instruct-2507-q4_k_m",
+    "weights_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+    "quantisation": "Q4_K_M",
+    "runtime": "llama.cpp b11476"
+   },
+   "sampling": {
+    "temperature": 0.7,
+    "seed": 13
+   },
+   "bench_git_sha": "2952959e431a80717c87b0d39eac79f2efd2913b"
+  },
+  "sample14": {
+   "model": {
+    "name": "qwen3-4b-instruct-2507-q4_k_m",
+    "weights_sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+    "quantisation": "Q4_K_M",
+    "runtime": "llama.cpp b11476"
+   },
+   "sampling": {
+    "temperature": 0.7,
+    "seed": 14
+   },
+   "bench_git_sha": "2952959e431a80717c87b0d39eac79f2efd2913b"
+  }
+ },
+ "n_runs": 240,
+ "n_tasks": 48,
+ "counts": {
+  "FM_ACC": {
+   "applicable_runs": 135,
+   "present": 5
+  },
+  "FM_FAB": {
+   "applicable_runs": 45,
+   "present": 0
+  },
+  "FM_ACTION_CLAIM": {
+   "applicable_runs": 25,
+   "present": 0
+  },
+  "FM_INDUCED": {
+   "applicable_runs": 20,
+   "present": 10
+  },
+  "FM_LEAK": {
+   "applicable_runs": 20,
+   "present": 13
+  },
+  "FM_TOOL": {
+   "applicable_runs": 45,
+   "present": 0
+  },
+  "FM_STATUS": {
+   "applicable_runs": 25,
+   "present": 0
+  },
+  "FM_STRUCT": {
+   "applicable_runs": 40,
+   "present": 0
+  },
+  "FM_CITE": {
+   "applicable_runs": 10,
+   "present": 0
+  },
+  "FM_INCONSISTENT": {
+   "applicable_runs": 240,
+   "present": 15
+  },
+  "FM_ANY": {
+   "applicable_runs": 240,
+   "present": 22
+  }
+ }
+}

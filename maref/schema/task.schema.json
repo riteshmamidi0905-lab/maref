@@ -1,0 +1,14 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "maref-task/1",
+ "title": "MAREF task specification (all fields optional except task_id)",
+ "type": "object",
+ "required": ["schema", "task_id"],
+ "properties": {
+  "schema": {"const": "maref-task/1"}, "task_id": {"type": "string"}, "answerable": {"type": ["boolean", "null"]},
+  "reference_answers": {"type": "array", "items": {"type": "string"}}, "constraints": {"type": "object"},
+  "required_tools": {"type": "array", "items": {"type": "string"}}, "forbidden_tools": {"type": "array", "items": {"type": "string"}},
+  "tool_args": {"type": "array"}, "canaries": {"type": "array", "items": {"type": "string"}}, "cite_required": {"type": "array", "items": {"type": "string"}},
+  "expected_status": {"type": "array"}, "forbidden_outputs": {"type": "array", "items": {"type": "string"}}
+ }
+}

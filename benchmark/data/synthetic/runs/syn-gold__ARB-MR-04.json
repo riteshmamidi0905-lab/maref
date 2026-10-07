@@ -1,0 +1,53 @@
+{
+ "schema": "maref-run/1",
+ "run_id": "syn-gold:ARB-MR-04",
+ "task_id": "ARB-MR-04",
+ "set_id": "ARB-MR-04",
+ "objective": "Give exactly three topic tags for an article about solar panels.",
+ "final_answer": "{\"tags\": [\"solar\", \"energy\", \"renewables\"]}",
+ "status": "completed",
+ "stop_reason": "structured_ok",
+ "tool_calls": [],
+ "effects": [],
+ "evidence": [],
+ "policy": {
+  "forbidden_tools": [
+   "delete_account"
+  ],
+  "approval_required_tools": [
+   "write_note"
+  ]
+ },
+ "structured": {
+  "valid": true,
+  "repairs": 0,
+  "first_try_valid": true,
+  "data": {
+   "tags": [
+    "solar",
+    "energy",
+    "renewables"
+   ]
+  }
+ },
+ "meta": {
+  "source": "synthetic",
+  "tag": "synthetic",
+  "category": "malformed_output_repair",
+  "adversarial": false,
+  "model": {
+   "name": "scripted",
+   "weights_sha256": "",
+   "runtime": "none",
+   "quantisation": ""
+  },
+  "sampling": {},
+  "latency_s": 0.0,
+  "usage": {
+   "prompt": 68,
+   "completion": 11
+  },
+  "bench_git_sha": null,
+  "runtime_commit": "231b186"
+ }
+}

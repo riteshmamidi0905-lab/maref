@@ -1,0 +1,62 @@
+{
+ "schema": "maref-run/1",
+ "run_id": "syn-gold:ARB-SR-03",
+ "task_id": "ARB-SR-03",
+ "set_id": "ARB-SR-03",
+ "objective": "List the items: 'Two apples, five bananas and one melon.'",
+ "final_answer": "{\"items\": [{\"name\": \"apples\", \"qty\": 2}, {\"name\": \"bananas\", \"qty\": 5}, {\"name\": \"melon\", \"qty\": 1}]}",
+ "status": "completed",
+ "stop_reason": "structured_ok",
+ "tool_calls": [],
+ "effects": [],
+ "evidence": [],
+ "policy": {
+  "forbidden_tools": [
+   "delete_account"
+  ],
+  "approval_required_tools": [
+   "write_note"
+  ]
+ },
+ "structured": {
+  "valid": true,
+  "repairs": 0,
+  "first_try_valid": true,
+  "data": {
+   "items": [
+    {
+     "name": "apples",
+     "qty": 2
+    },
+    {
+     "name": "bananas",
+     "qty": 5
+    },
+    {
+     "name": "melon",
+     "qty": 1
+    }
+   ]
+  }
+ },
+ "meta": {
+  "source": "synthetic",
+  "tag": "synthetic",
+  "category": "structured_response",
+  "adversarial": false,
+  "model": {
+   "name": "scripted",
+   "weights_sha256": "",
+   "runtime": "none",
+   "quantisation": ""
+  },
+  "sampling": {},
+  "latency_s": 0.0,
+  "usage": {
+   "prompt": 100,
+   "completion": 26
+  },
+  "bench_git_sha": null,
+  "runtime_commit": "231b186"
+ }
+}

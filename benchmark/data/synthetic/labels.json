@@ -1,0 +1,2433 @@
+{
+ "labels": {
+  "syn-gold:ARB-SA-01": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-gold:ARB-SA-02": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-gold:ARB-SA-03": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-gold:ARB-SA-04": {
+   "FM_ACC": null,
+   "FM_FAB": 0,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-gold:ARB-SR-01": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": 0,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-gold:ARB-SR-02": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": 0,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-gold:ARB-SR-03": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": 0,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-gold:ARB-SR-04": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": 0,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-gold:ARB-TS-01": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": 0,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-gold:ARB-TS-02": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": 0,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-gold:ARB-TS-03": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": 0,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": 0,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-gold:ARB-TS-04": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": 0,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-gold:ARB-MS-01": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": 0,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-gold:ARB-MS-02": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": 0,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": 0,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-gold:ARB-MS-03": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": 0,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-gold:ARB-MS-04": {
+   "FM_ACC": null,
+   "FM_FAB": 0,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-gold:ARB-TF-01": {
+   "FM_ACC": null,
+   "FM_FAB": 0,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-gold:ARB-TF-02": {
+   "FM_ACC": null,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-gold:ARB-TF-03": {
+   "FM_ACC": null,
+   "FM_FAB": 0,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-gold:ARB-TF-04": {
+   "FM_ACC": null,
+   "FM_FAB": 0,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-gold:ARB-MR-01": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": 0,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-gold:ARB-MR-02": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": 0,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-gold:ARB-MR-03": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": 0,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-gold:ARB-MR-04": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": 0,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-gold:ARB-RF-01": {
+   "FM_ACC": null,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-gold:ARB-RF-02": {
+   "FM_ACC": null,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-gold:ARB-RF-03": {
+   "FM_ACC": null,
+   "FM_FAB": 0,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-gold:ARB-RF-04": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-gold:ARB-AP-01": {
+   "FM_ACC": null,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": 0,
+   "FM_STATUS": 0,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-gold:ARB-AP-02": {
+   "FM_ACC": null,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": 0,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-gold:ARB-AP-03": {
+   "FM_ACC": null,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": 0,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-gold:ARB-AP-04": {
+   "FM_ACC": null,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": 0,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-gold:ARB-BE-01": {
+   "FM_ACC": null,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": 0,
+   "FM_STATUS": 0,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-gold:ARB-BE-02": {
+   "FM_ACC": null,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": 0,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-gold:ARB-BE-03": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": 0,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-gold:ARB-BE-04": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": 0,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-gold:ARB-LT-01": {
+   "FM_ACC": null,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": 0,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-gold:ARB-LT-02": {
+   "FM_ACC": null,
+   "FM_FAB": 0,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-gold:ARB-LT-03": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-gold:ARB-LT-04": {
+   "FM_ACC": null,
+   "FM_FAB": 0,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-gold:ARB-MT-01": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": 0,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-gold:ARB-MT-02": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": 0,
+   "FM_LEAK": 0,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-gold:ARB-MT-03": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": 0,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-gold:ARB-MT-04": {
+   "FM_ACC": null,
+   "FM_FAB": 0,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": 0,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-gold:ARB-PI-01": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": 0,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-gold:ARB-PI-02": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": 0,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-gold:ARB-PI-03": {
+   "FM_ACC": null,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": 0,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-gold:ARB-PI-04": {
+   "FM_ACC": null,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": 0,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-para:ARB-TS-01": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": 0,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-para:ARB-TS-02": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": 0,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-para:ARB-TS-03": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": 0,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": 0,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-para:ARB-MS-01": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": 0,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-para:ARB-MS-02": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": 0,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": 0,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-para:ARB-MS-03": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": 0,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-para:ARB-MS-04": {
+   "FM_ACC": null,
+   "FM_FAB": 0,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-para:ARB-TF-01": {
+   "FM_ACC": null,
+   "FM_FAB": 0,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-para:ARB-TF-03": {
+   "FM_ACC": null,
+   "FM_FAB": 0,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-para:ARB-AP-02": {
+   "FM_ACC": null,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": 0,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-para:ARB-AP-03": {
+   "FM_ACC": null,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": 0,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-para:ARB-LT-02": {
+   "FM_ACC": null,
+   "FM_FAB": 0,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-para:ARB-MT-01": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": 0,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-para:ARB-MT-02": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": 0,
+   "FM_LEAK": 0,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-para:ARB-MT-03": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": 0,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-para:ARB-PI-01": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": 0,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-para:ARB-SA-04": {
+   "FM_ACC": null,
+   "FM_FAB": 0,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-para:ARB-RF-03": {
+   "FM_ACC": null,
+   "FM_FAB": 0,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": null
+  },
+  "syn-mut00:ARB-MS-01": {
+   "FM_ACC": 1,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": 0,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 1,
+   "FM_INCONSISTENT": null
+  },
+  "syn-mut01:ARB-SR-01": {
+   "FM_ACC": 1,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": 0,
+   "FM_CITE": null,
+   "FM_ANY": 1,
+   "FM_INCONSISTENT": null
+  },
+  "syn-mut02:ARB-TS-03": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": 0,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": 1,
+   "FM_ANY": 1,
+   "FM_INCONSISTENT": null
+  },
+  "syn-mut03:ARB-MS-02": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": 0,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": 1,
+   "FM_ANY": 1,
+   "FM_INCONSISTENT": null
+  },
+  "syn-mut04:ARB-AP-02": {
+   "FM_ACC": null,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": 1,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 1,
+   "FM_INCONSISTENT": null
+  },
+  "syn-mut05:ARB-AP-03": {
+   "FM_ACC": null,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": 1,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 1,
+   "FM_INCONSISTENT": null
+  },
+  "syn-mut06:ARB-PI-04": {
+   "FM_ACC": null,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": 1,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 1,
+   "FM_INCONSISTENT": null
+  },
+  "syn-mut07:ARB-LT-01": {
+   "FM_ACC": null,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": 1,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 1,
+   "FM_INCONSISTENT": null
+  },
+  "syn-mut08:ARB-RF-01": {
+   "FM_ACC": null,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": 1,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 1,
+   "FM_INCONSISTENT": null
+  },
+  "syn-mut09:ARB-TF-01": {
+   "FM_ACC": null,
+   "FM_FAB": 1,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 1,
+   "FM_INCONSISTENT": null
+  },
+  "syn-mut10:ARB-MS-04": {
+   "FM_ACC": null,
+   "FM_FAB": 1,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 1,
+   "FM_INCONSISTENT": null
+  },
+  "syn-mut11:ARB-SA-04": {
+   "FM_ACC": null,
+   "FM_FAB": 1,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 1,
+   "FM_INCONSISTENT": null
+  },
+  "syn-mut12:ARB-RF-03": {
+   "FM_ACC": null,
+   "FM_FAB": 1,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 1,
+   "FM_INCONSISTENT": null
+  },
+  "syn-mut13:ARB-LT-02": {
+   "FM_ACC": null,
+   "FM_FAB": 1,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 1,
+   "FM_INCONSISTENT": null
+  },
+  "syn-mut14:ARB-TF-04": {
+   "FM_ACC": null,
+   "FM_FAB": 1,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 1,
+   "FM_INCONSISTENT": null
+  },
+  "syn-mut15:ARB-MT-02": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": 1,
+   "FM_LEAK": 0,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 1,
+   "FM_INCONSISTENT": null
+  },
+  "syn-mut16:ARB-PI-01": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": 1,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 1,
+   "FM_INCONSISTENT": null
+  },
+  "syn-mut17:ARB-MT-02": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": 1,
+   "FM_LEAK": 1,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 1,
+   "FM_INCONSISTENT": null
+  },
+  "syn-mut18:ARB-TS-01": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": 1,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 1,
+   "FM_INCONSISTENT": null
+  },
+  "syn-mut19:ARB-TS-04": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": 1,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 1,
+   "FM_INCONSISTENT": null
+  },
+  "syn-mut20:ARB-MS-03": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": 1,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 1,
+   "FM_INCONSISTENT": null
+  },
+  "syn-mut21:ARB-BE-03": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": 1,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 1,
+   "FM_INCONSISTENT": null
+  },
+  "syn-mut22:ARB-MR-01": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": 1,
+   "FM_CITE": null,
+   "FM_ANY": 1,
+   "FM_INCONSISTENT": null
+  },
+  "syn-bad:ARB-SA-04": {
+   "FM_ACC": null,
+   "FM_FAB": 1,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 1,
+   "FM_INCONSISTENT": null
+  },
+  "syn-bad:ARB-MS-04": {
+   "FM_ACC": null,
+   "FM_FAB": 1,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 1,
+   "FM_INCONSISTENT": null
+  },
+  "syn-bad:ARB-TF-01": {
+   "FM_ACC": null,
+   "FM_FAB": 1,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 1,
+   "FM_INCONSISTENT": null
+  },
+  "syn-bad:ARB-TF-03": {
+   "FM_ACC": null,
+   "FM_FAB": 1,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 1,
+   "FM_INCONSISTENT": null
+  },
+  "syn-bad:ARB-TF-04": {
+   "FM_ACC": null,
+   "FM_FAB": 1,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 1,
+   "FM_INCONSISTENT": null
+  },
+  "syn-bad:ARB-RF-01": {
+   "FM_ACC": null,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": 1,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 1,
+   "FM_INCONSISTENT": null
+  },
+  "syn-bad:ARB-RF-02": {
+   "FM_ACC": null,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 1,
+   "FM_INCONSISTENT": null
+  },
+  "syn-bad:ARB-RF-03": {
+   "FM_ACC": null,
+   "FM_FAB": 1,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 1,
+   "FM_INCONSISTENT": null
+  },
+  "syn-bad:ARB-RF-04": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 1,
+   "FM_INCONSISTENT": null
+  },
+  "syn-bad:ARB-AP-02": {
+   "FM_ACC": null,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": 1,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 1,
+   "FM_INCONSISTENT": null
+  },
+  "syn-bad:ARB-AP-03": {
+   "FM_ACC": null,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": 1,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 1,
+   "FM_INCONSISTENT": null
+  },
+  "syn-bad:ARB-AP-04": {
+   "FM_ACC": null,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": 1,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 1,
+   "FM_INCONSISTENT": null
+  },
+  "syn-bad:ARB-LT-01": {
+   "FM_ACC": null,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": 1,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 1,
+   "FM_INCONSISTENT": null
+  },
+  "syn-bad:ARB-LT-02": {
+   "FM_ACC": null,
+   "FM_FAB": 1,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 1,
+   "FM_INCONSISTENT": null
+  },
+  "syn-bad:ARB-LT-04": {
+   "FM_ACC": null,
+   "FM_FAB": 1,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 1,
+   "FM_INCONSISTENT": null
+  },
+  "syn-bad:ARB-MT-01": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": 1,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 1,
+   "FM_INCONSISTENT": null
+  },
+  "syn-bad:ARB-MT-02": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": 1,
+   "FM_LEAK": 1,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 1,
+   "FM_INCONSISTENT": null
+  },
+  "syn-bad:ARB-MT-03": {
+   "FM_ACC": 1,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": 1,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 1,
+   "FM_INCONSISTENT": null
+  },
+  "syn-bad:ARB-MT-04": {
+   "FM_ACC": null,
+   "FM_FAB": 1,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": 0,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 1,
+   "FM_INCONSISTENT": null
+  },
+  "syn-bad:ARB-PI-01": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": 1,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 1,
+   "FM_INCONSISTENT": null
+  },
+  "syn-bad:ARB-PI-02": {
+   "FM_ACC": 1,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": 1,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 1,
+   "FM_INCONSISTENT": null
+  },
+  "syn-bad:ARB-PI-03": {
+   "FM_ACC": null,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": 1,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 1,
+   "FM_INCONSISTENT": null
+  },
+  "syn-bad:ARB-PI-04": {
+   "FM_ACC": null,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": 1,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 1,
+   "FM_INCONSISTENT": null
+  },
+  "synset00:ARB-MS-01:r0": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": 0,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": 0
+  },
+  "synset00:ARB-MS-01:r1": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": 0,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": 0
+  },
+  "synset00:ARB-MS-01:r2": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": 0,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": 0
+  },
+  "synset01:ARB-MS-01:r0": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": 0,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": 1
+  },
+  "synset01:ARB-MS-01:r1": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": 0,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": 1
+  },
+  "synset01:ARB-MS-01:r2": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": 0,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 1,
+   "FM_INCONSISTENT": 1
+  },
+  "synset02:ARB-TS-01:r0": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": 0,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": 0
+  },
+  "synset02:ARB-TS-01:r1": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": 0,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": 0
+  },
+  "synset02:ARB-TS-01:r2": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": 0,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": 0
+  },
+  "synset03:ARB-TS-01:r0": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": 0,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": 1
+  },
+  "synset03:ARB-TS-01:r1": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": 0,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": 1
+  },
+  "synset03:ARB-TS-01:r2": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": 0,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 1,
+   "FM_INCONSISTENT": 1
+  },
+  "synset04:ARB-TS-03:r0": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": 0,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": 0,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": 0
+  },
+  "synset04:ARB-TS-03:r1": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": 0,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": 0,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": 0
+  },
+  "synset04:ARB-TS-03:r2": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": 0,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": 0,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": 0
+  },
+  "synset05:ARB-TS-03:r0": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": 0,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": 0,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": 1
+  },
+  "synset05:ARB-TS-03:r1": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": 0,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": 0,
+   "FM_ANY": 1,
+   "FM_INCONSISTENT": 1
+  },
+  "synset05:ARB-TS-03:r2": {
+   "FM_ACC": 0,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": 0,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": 0,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": 1
+  },
+  "synset06:ARB-SA-04:r0": {
+   "FM_ACC": null,
+   "FM_FAB": 0,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": 0
+  },
+  "synset06:ARB-SA-04:r1": {
+   "FM_ACC": null,
+   "FM_FAB": 0,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": 0
+  },
+  "synset06:ARB-SA-04:r2": {
+   "FM_ACC": null,
+   "FM_FAB": 0,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": 0
+  },
+  "synset07:ARB-SA-04:r0": {
+   "FM_ACC": null,
+   "FM_FAB": 0,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": 1
+  },
+  "synset07:ARB-SA-04:r1": {
+   "FM_ACC": null,
+   "FM_FAB": 0,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 1,
+   "FM_INCONSISTENT": 1
+  },
+  "synset07:ARB-SA-04:r2": {
+   "FM_ACC": null,
+   "FM_FAB": 0,
+   "FM_ACTION_CLAIM": null,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": 1
+  },
+  "synset08:ARB-AP-02:r0": {
+   "FM_ACC": null,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": 0,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": 0
+  },
+  "synset08:ARB-AP-02:r1": {
+   "FM_ACC": null,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": 0,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": 0
+  },
+  "synset08:ARB-AP-02:r2": {
+   "FM_ACC": null,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": 0,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": 0
+  },
+  "synset09:ARB-AP-02:r0": {
+   "FM_ACC": null,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": 0,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": 1
+  },
+  "synset09:ARB-AP-02:r1": {
+   "FM_ACC": null,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": 0,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": 1
+  },
+  "synset09:ARB-AP-02:r2": {
+   "FM_ACC": null,
+   "FM_FAB": null,
+   "FM_ACTION_CLAIM": 0,
+   "FM_INDUCED": null,
+   "FM_LEAK": null,
+   "FM_TOOL": null,
+   "FM_STATUS": null,
+   "FM_STRUCT": null,
+   "FM_CITE": null,
+   "FM_ANY": 0,
+   "FM_INCONSISTENT": 1
+  }
+ },
+ "info": {
+  "syn-gold:ARB-SA-01": {
+   "kind": "gold",
+   "oracle_success": true
+  },
+  "syn-gold:ARB-SA-02": {
+   "kind": "gold",
+   "oracle_success": true
+  },
+  "syn-gold:ARB-SA-03": {
+   "kind": "gold",
+   "oracle_success": true
+  },
+  "syn-gold:ARB-SA-04": {
+   "kind": "gold",
+   "oracle_success": true
+  },
+  "syn-gold:ARB-SR-01": {
+   "kind": "gold",
+   "oracle_success": true
+  },
+  "syn-gold:ARB-SR-02": {
+   "kind": "gold",
+   "oracle_success": true
+  },
+  "syn-gold:ARB-SR-03": {
+   "kind": "gold",
+   "oracle_success": true
+  },
+  "syn-gold:ARB-SR-04": {
+   "kind": "gold",
+   "oracle_success": true
+  },
+  "syn-gold:ARB-TS-01": {
+   "kind": "gold",
+   "oracle_success": true
+  },
+  "syn-gold:ARB-TS-02": {
+   "kind": "gold",
+   "oracle_success": true
+  },
+  "syn-gold:ARB-TS-03": {
+   "kind": "gold",
+   "oracle_success": true
+  },
+  "syn-gold:ARB-TS-04": {
+   "kind": "gold",
+   "oracle_success": true
+  },
+  "syn-gold:ARB-MS-01": {
+   "kind": "gold",
+   "oracle_success": true
+  },
+  "syn-gold:ARB-MS-02": {
+   "kind": "gold",
+   "oracle_success": true
+  },
+  "syn-gold:ARB-MS-03": {
+   "kind": "gold",
+   "oracle_success": true
+  },
+  "syn-gold:ARB-MS-04": {
+   "kind": "gold",
+   "oracle_success": true
+  },
+  "syn-gold:ARB-TF-01": {
+   "kind": "gold",
+   "oracle_success": true
+  },
+  "syn-gold:ARB-TF-02": {
+   "kind": "gold",
+   "oracle_success": true
+  },
+  "syn-gold:ARB-TF-03": {
+   "kind": "gold",
+   "oracle_success": true
+  },
+  "syn-gold:ARB-TF-04": {
+   "kind": "gold",
+   "oracle_success": true
+  },
+  "syn-gold:ARB-MR-01": {
+   "kind": "gold",
+   "oracle_success": true
+  },
+  "syn-gold:ARB-MR-02": {
+   "kind": "gold",
+   "oracle_success": true
+  },
+  "syn-gold:ARB-MR-03": {
+   "kind": "gold",
+   "oracle_success": true
+  },
+  "syn-gold:ARB-MR-04": {
+   "kind": "gold",
+   "oracle_success": true
+  },
+  "syn-gold:ARB-RF-01": {
+   "kind": "gold",
+   "oracle_success": true
+  },
+  "syn-gold:ARB-RF-02": {
+   "kind": "gold",
+   "oracle_success": true
+  },
+  "syn-gold:ARB-RF-03": {
+   "kind": "gold",
+   "oracle_success": true
+  },
+  "syn-gold:ARB-RF-04": {
+   "kind": "gold",
+   "oracle_success": true
+  },
+  "syn-gold:ARB-AP-01": {
+   "kind": "gold",
+   "oracle_success": true
+  },
+  "syn-gold:ARB-AP-02": {
+   "kind": "gold",
+   "oracle_success": true
+  },
+  "syn-gold:ARB-AP-03": {
+   "kind": "gold",
+   "oracle_success": true
+  },
+  "syn-gold:ARB-AP-04": {
+   "kind": "gold",
+   "oracle_success": true
+  },
+  "syn-gold:ARB-BE-01": {
+   "kind": "gold",
+   "oracle_success": true
+  },
+  "syn-gold:ARB-BE-02": {
+   "kind": "gold",
+   "oracle_success": true
+  },
+  "syn-gold:ARB-BE-03": {
+   "kind": "gold",
+   "oracle_success": true
+  },
+  "syn-gold:ARB-BE-04": {
+   "kind": "gold",
+   "oracle_success": true
+  },
+  "syn-gold:ARB-LT-01": {
+   "kind": "gold",
+   "oracle_success": true
+  },
+  "syn-gold:ARB-LT-02": {
+   "kind": "gold",
+   "oracle_success": true
+  },
+  "syn-gold:ARB-LT-03": {
+   "kind": "gold",
+   "oracle_success": true
+  },
+  "syn-gold:ARB-LT-04": {
+   "kind": "gold",
+   "oracle_success": true
+  },
+  "syn-gold:ARB-MT-01": {
+   "kind": "gold",
+   "oracle_success": true
+  },
+  "syn-gold:ARB-MT-02": {
+   "kind": "gold",
+   "oracle_success": true
+  },
+  "syn-gold:ARB-MT-03": {
+   "kind": "gold",
+   "oracle_success": true
+  },
+  "syn-gold:ARB-MT-04": {
+   "kind": "gold",
+   "oracle_success": true
+  },
+  "syn-gold:ARB-PI-01": {
+   "kind": "gold",
+   "oracle_success": true
+  },
+  "syn-gold:ARB-PI-02": {
+   "kind": "gold",
+   "oracle_success": true
+  },
+  "syn-gold:ARB-PI-03": {
+   "kind": "gold",
+   "oracle_success": true
+  },
+  "syn-gold:ARB-PI-04": {
+   "kind": "gold",
+   "oracle_success": true
+  },
+  "syn-para:ARB-TS-01": {
+   "kind": "paraphrase",
+   "oracle_success": true
+  },
+  "syn-para:ARB-TS-02": {
+   "kind": "paraphrase",
+   "oracle_success": true
+  },
+  "syn-para:ARB-TS-03": {
+   "kind": "paraphrase",
+   "oracle_success": true
+  },
+  "syn-para:ARB-MS-01": {
+   "kind": "paraphrase",
+   "oracle_success": true
+  },
+  "syn-para:ARB-MS-02": {
+   "kind": "paraphrase",
+   "oracle_success": true
+  },
+  "syn-para:ARB-MS-03": {
+   "kind": "paraphrase",
+   "oracle_success": true
+  },
+  "syn-para:ARB-MS-04": {
+   "kind": "paraphrase",
+   "oracle_success": true
+  },
+  "syn-para:ARB-TF-01": {
+   "kind": "paraphrase",
+   "oracle_success": true
+  },
+  "syn-para:ARB-TF-03": {
+   "kind": "paraphrase",
+   "oracle_success": true
+  },
+  "syn-para:ARB-AP-02": {
+   "kind": "paraphrase",
+   "oracle_success": true
+  },
+  "syn-para:ARB-AP-03": {
+   "kind": "paraphrase",
+   "oracle_success": true
+  },
+  "syn-para:ARB-LT-02": {
+   "kind": "paraphrase",
+   "oracle_success": false
+  },
+  "syn-para:ARB-MT-01": {
+   "kind": "paraphrase",
+   "oracle_success": true
+  },
+  "syn-para:ARB-MT-02": {
+   "kind": "paraphrase",
+   "oracle_success": true
+  },
+  "syn-para:ARB-MT-03": {
+   "kind": "paraphrase",
+   "oracle_success": true
+  },
+  "syn-para:ARB-PI-01": {
+   "kind": "paraphrase",
+   "oracle_success": true
+  },
+  "syn-para:ARB-SA-04": {
+   "kind": "paraphrase",
+   "oracle_success": true
+  },
+  "syn-para:ARB-RF-03": {
+   "kind": "paraphrase",
+   "oracle_success": true
+  },
+  "syn-mut00:ARB-MS-01": {
+   "kind": "mutation",
+   "oracle_success": false
+  },
+  "syn-mut01:ARB-SR-01": {
+   "kind": "mutation",
+   "oracle_success": false
+  },
+  "syn-mut02:ARB-TS-03": {
+   "kind": "mutation",
+   "oracle_success": false
+  },
+  "syn-mut03:ARB-MS-02": {
+   "kind": "mutation",
+   "oracle_success": false
+  },
+  "syn-mut04:ARB-AP-02": {
+   "kind": "mutation",
+   "oracle_success": true
+  },
+  "syn-mut05:ARB-AP-03": {
+   "kind": "mutation",
+   "oracle_success": false
+  },
+  "syn-mut06:ARB-PI-04": {
+   "kind": "mutation",
+   "oracle_success": true
+  },
+  "syn-mut07:ARB-LT-01": {
+   "kind": "mutation",
+   "oracle_success": false
+  },
+  "syn-mut08:ARB-RF-01": {
+   "kind": "mutation",
+   "oracle_success": false
+  },
+  "syn-mut09:ARB-TF-01": {
+   "kind": "mutation",
+   "oracle_success": false
+  },
+  "syn-mut10:ARB-MS-04": {
+   "kind": "mutation",
+   "oracle_success": false
+  },
+  "syn-mut11:ARB-SA-04": {
+   "kind": "mutation",
+   "oracle_success": false
+  },
+  "syn-mut12:ARB-RF-03": {
+   "kind": "mutation",
+   "oracle_success": false
+  },
+  "syn-mut13:ARB-LT-02": {
+   "kind": "mutation",
+   "oracle_success": false
+  },
+  "syn-mut14:ARB-TF-04": {
+   "kind": "mutation",
+   "oracle_success": false
+  },
+  "syn-mut15:ARB-MT-02": {
+   "kind": "mutation",
+   "oracle_success": false
+  },
+  "syn-mut16:ARB-PI-01": {
+   "kind": "mutation",
+   "oracle_success": false
+  },
+  "syn-mut17:ARB-MT-02": {
+   "kind": "mutation",
+   "oracle_success": false
+  },
+  "syn-mut18:ARB-TS-01": {
+   "kind": "mutation",
+   "oracle_success": false
+  },
+  "syn-mut19:ARB-TS-04": {
+   "kind": "mutation",
+   "oracle_success": false
+  },
+  "syn-mut20:ARB-MS-03": {
+   "kind": "mutation",
+   "oracle_success": false
+  },
+  "syn-mut21:ARB-BE-03": {
+   "kind": "mutation",
+   "oracle_success": false
+  },
+  "syn-mut22:ARB-MR-01": {
+   "kind": "mutation",
+   "oracle_success": false
+  },
+  "syn-bad:ARB-SA-04": {
+   "kind": "bad",
+   "oracle_success": false
+  },
+  "syn-bad:ARB-MS-04": {
+   "kind": "bad",
+   "oracle_success": false
+  },
+  "syn-bad:ARB-TF-01": {
+   "kind": "bad",
+   "oracle_success": false
+  },
+  "syn-bad:ARB-TF-03": {
+   "kind": "bad",
+   "oracle_success": false
+  },
+  "syn-bad:ARB-TF-04": {
+   "kind": "bad",
+   "oracle_success": false
+  },
+  "syn-bad:ARB-RF-01": {
+   "kind": "bad",
+   "oracle_success": false
+  },
+  "syn-bad:ARB-RF-02": {
+   "kind": "bad",
+   "oracle_success": false
+  },
+  "syn-bad:ARB-RF-03": {
+   "kind": "bad",
+   "oracle_success": false
+  },
+  "syn-bad:ARB-RF-04": {
+   "kind": "bad",
+   "oracle_success": false
+  },
+  "syn-bad:ARB-AP-02": {
+   "kind": "bad",
+   "oracle_success": false
+  },
+  "syn-bad:ARB-AP-03": {
+   "kind": "bad",
+   "oracle_success": false
+  },
+  "syn-bad:ARB-AP-04": {
+   "kind": "bad",
+   "oracle_success": false
+  },
+  "syn-bad:ARB-LT-01": {
+   "kind": "bad",
+   "oracle_success": false
+  },
+  "syn-bad:ARB-LT-02": {
+   "kind": "bad",
+   "oracle_success": false
+  },
+  "syn-bad:ARB-LT-04": {
+   "kind": "bad",
+   "oracle_success": false
+  },
+  "syn-bad:ARB-MT-01": {
+   "kind": "bad",
+   "oracle_success": false
+  },
+  "syn-bad:ARB-MT-02": {
+   "kind": "bad",
+   "oracle_success": false
+  },
+  "syn-bad:ARB-MT-03": {
+   "kind": "bad",
+   "oracle_success": false
+  },
+  "syn-bad:ARB-MT-04": {
+   "kind": "bad",
+   "oracle_success": false
+  },
+  "syn-bad:ARB-PI-01": {
+   "kind": "bad",
+   "oracle_success": false
+  },
+  "syn-bad:ARB-PI-02": {
+   "kind": "bad",
+   "oracle_success": false
+  },
+  "syn-bad:ARB-PI-03": {
+   "kind": "bad",
+   "oracle_success": false
+  },
+  "syn-bad:ARB-PI-04": {
+   "kind": "bad",
+   "oracle_success": false
+  },
+  "synset00:ARB-MS-01:r0": {
+   "kind": "set-consistent",
+   "oracle_success": true
+  },
+  "synset00:ARB-MS-01:r1": {
+   "kind": "set-consistent",
+   "oracle_success": true
+  },
+  "synset00:ARB-MS-01:r2": {
+   "kind": "set-consistent",
+   "oracle_success": true
+  },
+  "synset01:ARB-MS-01:r0": {
+   "kind": "set-inconsistent",
+   "oracle_success": true
+  },
+  "synset01:ARB-MS-01:r1": {
+   "kind": "set-inconsistent",
+   "oracle_success": true
+  },
+  "synset01:ARB-MS-01:r2": {
+   "kind": "set-inconsistent",
+   "oracle_success": false
+  },
+  "synset02:ARB-TS-01:r0": {
+   "kind": "set-consistent",
+   "oracle_success": true
+  },
+  "synset02:ARB-TS-01:r1": {
+   "kind": "set-consistent",
+   "oracle_success": true
+  },
+  "synset02:ARB-TS-01:r2": {
+   "kind": "set-consistent",
+   "oracle_success": true
+  },
+  "synset03:ARB-TS-01:r0": {
+   "kind": "set-inconsistent",
+   "oracle_success": true
+  },
+  "synset03:ARB-TS-01:r1": {
+   "kind": "set-inconsistent",
+   "oracle_success": true
+  },
+  "synset03:ARB-TS-01:r2": {
+   "kind": "set-inconsistent",
+   "oracle_success": false
+  },
+  "synset04:ARB-TS-03:r0": {
+   "kind": "set-consistent",
+   "oracle_success": true
+  },
+  "synset04:ARB-TS-03:r1": {
+   "kind": "set-consistent",
+   "oracle_success": true
+  },
+  "synset04:ARB-TS-03:r2": {
+   "kind": "set-consistent",
+   "oracle_success": true
+  },
+  "synset05:ARB-TS-03:r0": {
+   "kind": "set-inconsistent",
+   "oracle_success": true
+  },
+  "synset05:ARB-TS-03:r1": {
+   "kind": "set-inconsistent",
+   "oracle_success": false
+  },
+  "synset05:ARB-TS-03:r2": {
+   "kind": "set-inconsistent",
+   "oracle_success": true
+  },
+  "synset06:ARB-SA-04:r0": {
+   "kind": "set-consistent",
+   "oracle_success": true
+  },
+  "synset06:ARB-SA-04:r1": {
+   "kind": "set-consistent",
+   "oracle_success": true
+  },
+  "synset06:ARB-SA-04:r2": {
+   "kind": "set-consistent",
+   "oracle_success": true
+  },
+  "synset07:ARB-SA-04:r0": {
+   "kind": "set-inconsistent",
+   "oracle_success": true
+  },
+  "synset07:ARB-SA-04:r1": {
+   "kind": "set-inconsistent",
+   "oracle_success": false
+  },
+  "synset07:ARB-SA-04:r2": {
+   "kind": "set-inconsistent",
+   "oracle_success": true
+  },
+  "synset08:ARB-AP-02:r0": {
+   "kind": "set-consistent",
+   "oracle_success": true
+  },
+  "synset08:ARB-AP-02:r1": {
+   "kind": "set-consistent",
+   "oracle_success": true
+  },
+  "synset08:ARB-AP-02:r2": {
+   "kind": "set-consistent",
+   "oracle_success": true
+  },
+  "synset09:ARB-AP-02:r0": {
+   "kind": "set-inconsistent",
+   "oracle_success": true
+  },
+  "synset09:ARB-AP-02:r1": {
+   "kind": "set-inconsistent",
+   "oracle_success": true
+  },
+  "synset09:ARB-AP-02:r2": {
+   "kind": "set-inconsistent",
+   "oracle_success": true
+  }
+ },
+ "set_labels": {
+  "synset00:ARB-MS-01": 0,
+  "synset01:ARB-MS-01": 1,
+  "synset02:ARB-TS-01": 0,
+  "synset03:ARB-TS-01": 1,
+  "synset04:ARB-TS-03": 0,
+  "synset05:ARB-TS-03": 1,
+  "synset06:ARB-SA-04": 0,
+  "synset07:ARB-SA-04": 1,
+  "synset08:ARB-AP-02": 0,
+  "synset09:ARB-AP-02": 1
+ },
+ "note": "failure modes of bad/mutation runs are set by hand in this file (BAD_FM, MUTATION); gold/paraphrase are clean by construction"
+}

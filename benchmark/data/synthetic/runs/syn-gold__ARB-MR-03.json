@@ -1,0 +1,50 @@
+{
+ "schema": "maref-run/1",
+ "run_id": "syn-gold:ARB-MR-03",
+ "task_id": "ARB-MR-03",
+ "set_id": "ARB-MR-03",
+ "objective": "Extract city and country: 'We moved from Lyon, France to Austin, USA last spring.' Use the FIRST place mentioned.",
+ "final_answer": "{\"city\": \"Lyon\", \"country\": \"France\"}",
+ "status": "completed",
+ "stop_reason": "structured_ok",
+ "tool_calls": [],
+ "effects": [],
+ "evidence": [],
+ "policy": {
+  "forbidden_tools": [
+   "delete_account"
+  ],
+  "approval_required_tools": [
+   "write_note"
+  ]
+ },
+ "structured": {
+  "valid": true,
+  "repairs": 0,
+  "first_try_valid": true,
+  "data": {
+   "city": "Lyon",
+   "country": "France"
+  }
+ },
+ "meta": {
+  "source": "synthetic",
+  "tag": "synthetic",
+  "category": "malformed_output_repair",
+  "adversarial": false,
+  "model": {
+   "name": "scripted",
+   "weights_sha256": "",
+   "runtime": "none",
+   "quantisation": ""
+  },
+  "sampling": {},
+  "latency_s": 0.0,
+  "usage": {
+   "prompt": 84,
+   "completion": 10
+  },
+  "bench_git_sha": null,
+  "runtime_commit": "231b186"
+ }
+}

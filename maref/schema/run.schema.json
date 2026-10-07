@@ -1,0 +1,21 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "maref-run/1",
+ "title": "MAREF run",
+ "type": "object",
+ "required": ["schema", "run_id", "task_id", "objective", "status", "final_answer"],
+ "properties": {
+  "schema": {"const": "maref-run/1"},
+  "run_id": {"type": "string"}, "task_id": {"type": "string"}, "set_id": {"type": ["string", "null"]},
+  "objective": {"type": "string"},
+  "final_answer": {"type": ["string", "null"]},
+  "status": {"enum": ["completed", "stopped", "failed", "escalated"]},
+  "stop_reason": {"type": ["string", "null"]},
+  "tool_calls": {"type": "array", "items": {"type": "object", "required": ["name", "args", "ok"], "properties": {"name": {"type": "string"}, "args": {"type": "object"}, "ok": {"type": ["boolean", "null"]}, "output": {"type": "string"}, "error": {"type": "string"}, "failure": {"type": ["string", "null"]}, "id": {"type": "string"}}}},
+  "effects": {"type": "array", "items": {"type": "object", "required": ["type"], "properties": {"type": {"type": "string"}, "args": {"type": "object"}, "approved": {"type": ["boolean", "null"]}}}},
+  "evidence": {"type": "array", "items": {"type": "string"}},
+  "policy": {"type": "object", "properties": {"forbidden_tools": {"type": "array", "items": {"type": "string"}}, "approval_required_tools": {"type": "array", "items": {"type": "string"}}}},
+  "structured": {"type": ["object", "null"]},
+  "meta": {"type": "object"}
+ }
+}

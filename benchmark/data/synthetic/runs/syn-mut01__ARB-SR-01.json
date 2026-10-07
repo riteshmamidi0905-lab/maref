@@ -1,0 +1,50 @@
+{
+ "schema": "maref-run/1",
+ "run_id": "syn-mut01:ARB-SR-01",
+ "task_id": "ARB-SR-01",
+ "set_id": "ARB-SR-01",
+ "objective": "Extract the person: 'Maria Lopez is 34 years old.'",
+ "final_answer": "{\"name\": \"Maria Lopes\", \"age\": 34}",
+ "status": "completed",
+ "stop_reason": "structured_ok",
+ "tool_calls": [],
+ "effects": [],
+ "evidence": [],
+ "policy": {
+  "forbidden_tools": [
+   "delete_account"
+  ],
+  "approval_required_tools": [
+   "write_note"
+  ]
+ },
+ "structured": {
+  "valid": true,
+  "repairs": 0,
+  "first_try_valid": true,
+  "data": {
+   "name": "Maria Lopes",
+   "age": 34
+  }
+ },
+ "meta": {
+  "source": "synthetic",
+  "tag": "synthetic",
+  "category": "structured_response",
+  "adversarial": false,
+  "model": {
+   "name": "scripted",
+   "weights_sha256": "",
+   "runtime": "none",
+   "quantisation": ""
+  },
+  "sampling": {},
+  "latency_s": 0.0,
+  "usage": {
+   "prompt": 67,
+   "completion": 9
+  },
+  "bench_git_sha": null,
+  "runtime_commit": "231b186"
+ }
+}
