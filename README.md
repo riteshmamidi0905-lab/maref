@@ -41,7 +41,7 @@ pytest -q                                                                       
 ```
 
 ## Result of the one-time test evaluation (canonical wording: `docs/CLAIM.md`; statistics: `docs/EVALUATION.md`)
-**Research prototype · pre-registered distinctness verdict: MIXED** (`MIXED: agreement and false alarms hold, no trajectory-only failure mode qualifies`). Test split, reference-aware, frozen primary labels, 187 runs: **33/33** labelled failures detected, **36/154** clean runs falsely flagged, **151/187** overall agreement.
+**Research prototype · pre-registered distinctness verdict: MIXED** (`MIXED: agreement and false alarms hold, no trajectory-only failure mode qualifies`). Test split, reference-aware, frozen primary labels, 187 runs: **33/33** labelled failures detected, **36/154** clean runs flagged (false alarms), **151/187** overall agreement.
 * **Against llmeval as shipped (pre-registered comparison): passed.** MAREF had significantly higher run-level agreement than llmeval hard gates under the clustered comparison (pooled **+0.257**, 95% [0.097, 0.419]; real runs **+0.292**, [0.092, 0.492]) and a lower real-run false-alarm rate (**30/112, ~27%** vs **65/112, ~58%**).
 * **Against stronger baselines: better overall agreement not established.** Always-pass 154/187, dev-fitted llmeval 158/187, local 4B judge 166/187 vs MAREF 151/187; all paired intervals include zero.
 * **Trajectory-specific distinctness: the third criterion failed.** No trajectory-only failure mode had at least 5 positives with MAREF recall ≥ 80% and llmeval-gates recall ≤ 50%.
