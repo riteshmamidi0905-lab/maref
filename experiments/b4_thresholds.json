@@ -1,0 +1,9 @@
+{
+ "fitted_on": "dev split only",
+ "n_dev_runs": 195,
+ "dev_agreement": "161/195",
+ "rule": "flag if any listed criterion score < its threshold",
+ "thresholds": {
+  "number_accuracy": 0.1
+ }
+}

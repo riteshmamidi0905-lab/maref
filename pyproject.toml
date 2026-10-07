@@ -25,7 +25,7 @@ maref = "maref.cli:main"
 include = ["maref*"]
 
 [tool.setuptools.package-data]
-maref = ["schema/*.json"]
+maref = ["schemas/*.json"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
@@ -37,3 +37,4 @@ target-version = "py310"
 [tool.ruff.lint]
 select = ["E", "F", "I", "B", "UP"]
 ignore = ["E501", "E731", "E741", "B007"]
+per-file-ignores = { "benchmark/*" = ["F401", "B905", "UP", "I"] }   # benchmark/ is hash-frozen; the linter must not rewrite it

@@ -7,7 +7,7 @@ from __future__ import annotations
 
 from ..schema import DimResult
 from ..taxonomy import Conf, Dim, V
-from ..text import CLAIM, DONE_CLAIM, PENDING, TOOL_KIND, ACTION_VERBS, ids, negated_before, numbers
+from ..text import ACTION_VERBS, CLAIM, DONE_CLAIM, PENDING, TOOL_KIND, ids, negated_before, numbers
 
 
 def evidence_text(run) -> str:

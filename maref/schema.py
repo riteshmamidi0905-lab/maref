@@ -4,7 +4,6 @@ run ended. A TASKSPEC is OPTIONAL reference information (expected answer, constr
 from __future__ import annotations
 
 from dataclasses import asdict, dataclass, field
-from typing import Any
 
 RUN_SCHEMA = "maref-run/1"
 TASK_SCHEMA = "maref-task/1"

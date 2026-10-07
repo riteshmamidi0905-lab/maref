@@ -34,6 +34,23 @@ def bootstrap_diff(a: list[int], b: list[int], iters: int = 10000, seed: int = 2
     return base, ds[int(0.025 * iters)], ds[int(0.975 * iters) - 1]
 
 
+def cluster_bootstrap_diff(a: list[int], b: list[int], clusters: list[str], iters: int = 10000, seed: int = 20260101) -> tuple[float, float, float]:
+    """Paired CLUSTER bootstrap of mean(a) - mean(b): whole clusters (here: all runs of one task) are resampled together, because runs of one task are not independent. Wider (more honest) than the item bootstrap."""
+    assert len(a) == len(b) == len(clusters) and a
+    rng = random.Random(seed)
+    groups: dict[str, list[int]] = {}
+    for i, c in enumerate(clusters):
+        groups.setdefault(c, []).append(i)
+    keys = sorted(groups)
+    base = sum(a) / len(a) - sum(b) / len(b)
+    ds = []
+    for _ in range(iters):
+        idx = [i for k in (keys[rng.randrange(len(keys))] for _ in keys) for i in groups[k]]
+        ds.append(sum(a[i] for i in idx) / len(idx) - sum(b[i] for i in idx) / len(idx))
+    ds.sort()
+    return base, ds[int(0.025 * iters)], ds[int(0.975 * iters) - 1]
+
+
 def quantile(xs: list[float], q: float) -> float:
     s = sorted(xs)
     if not s:

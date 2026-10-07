@@ -75,7 +75,8 @@ def ids(text: str) -> list[str]:
 
 def quoted_spans(text: str, min_len: int = 20) -> list[str]:
     spans = []
-    for m in re.finditer(r"'([^'\n]{%d,}?)'(?=[\s.,;:)!?]|$)|\"([^\"\n]{%d,}?)\"" % (min_len, min_len), text or ""):
+    pattern = rf"'([^'\n]{{{min_len},}}?)'(?=[\s.,;:)!?]|$)|\"([^\"\n]{{{min_len},}}?)\""
+    for m in re.finditer(pattern, text or ""):
         spans.append(m.group(1) or m.group(2))
     return spans
 
